@@ -16,8 +16,8 @@
 - **可发现**：安装根有标准`SKILL.md`入口；不等于当前会话已加载或实际调用。
   本轮不检查宿主缓存/自动调用策略的实际运行效果；除明确使用过的维护技能外，
   不从路径存在推断会话加载。这里各技能的当前会话调用状态统一记**未核**。
-- 技能SemVer独立管理；仓库日期标签不是技能版本。本轮拟用`repo-2026.11.01`；
-  是否已推送以[发布记录](docs/validation/2026-11-01-publication/REVIEW.md)与远端回读为准。
+- 技能SemVer独立管理；仓库日期标签不是技能版本。`repo-2026.11.01`已推送，
+  指向内容提交`b02192f`；完整身份与远端回读见[发布记录](docs/validation/2026-11-01-publication/REVIEW.md)。
 
 证据：[逐文件身份与安装回读](docs/validation/2026-11-01-lineage/observations.json)、
 [本轮校验与限制](docs/validation/2026-11-01-lineage/REVIEW.md)。观察过时后应重核受影响行。

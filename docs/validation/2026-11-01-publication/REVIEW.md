@@ -32,8 +32,28 @@
 - 本轮沿用skill-creator的格式门禁与product-docs的终态防重放、证据分层、
   公开边界原则；不增加新的技能合同或本机安装动作。
 
-收尾复核通过，准备精确暂存与提交；尚未声明push成功。
-完成后在此登记内容提交、标签指向、远端分支/标签回读及独立的终态文档提交。
+提交前门禁：git diff --cached --check与git diff --check均退出0；新增/修改的
+CJS逐个node --check通过；无未暂存/未跟踪候选，original.txt未入索引。
+
+## 已完成的分发与真实回读
+
+- 内容提交：`b02192fb721eada44d6f0aeba9d0780e7909a324`，
+  `chore: publish skill lineage records`，71个文件。
+- 新建annotated标签：`repo-2026.11.01`；tag object为
+  `1c599d9d925ed118fd60dc493694f990aa0aa0a6`，peeled commit为上述内容提交。
+- `git push --atomic origin HEAD:refs/heads/main
+  refs/tags/repo-2026.11.01:refs/tags/repo-2026.11.01`成功，普通快进，无force。
+- 随后git ls-remote回读main为`b02192fb721eada44d6f0aeba9d0780e7909a324`，
+  标签object/peeled commit均与本地一致。内容push后工作树干净。
+- 推送前首次远端比较因PowerShell/传输正则检查误判而本地停止，未执行tag/push；
+  改为按制表符精确比较后再查询确认，才创建标签并push。没有远端冲突或覆盖。
+
+本文件、计划顶部和索引的终态回写单独提交为
+`docs: close skill lineage publication`，随后普通push main并回读。该文档提交不改
+任何技能，日期标签仍保持内容提交，不为收录推送后的证明而移动标签。
+终态文档提交自身哈希不自写入同一文件；可由上述唯一提交标题和标签后的Git历史解析，
+实际最终main身份在交付回复提供。若恢复发生在文档提交/push之间，只补缺失文档分发，
+不重放内容提交、标签或本机安装。
 
 ## 证明边界
 
