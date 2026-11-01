@@ -12,10 +12,15 @@ description: >-
   Keywords — ComfyUI, workflow, API format, queue, prompt_id, generate,
   txt2img, img2img, batch, KSampler, object_info, 出图, 跑工作流.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # ComfyUI Generate
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 A thin, honest client. It knows the HTTP contract, not your models: the graph,
 the server and every value you want driven come from the outside.

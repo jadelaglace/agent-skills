@@ -1,0 +1,79 @@
+{
+  "stage": "S2",
+  "baseline": "e43c0cbe33a038ea1e94c563066546eb57b9a6e9",
+  "date": "2026-11-01",
+  "files": [
+    {
+      "path": "architecture/SKILL.md",
+      "sha256": "12F9EC85B6DD10B41B2082ADCC888A74A176BF1525FF32D82D5550A5FE4609CF"
+    },
+    {
+      "path": "architecture/agents/openai.yaml",
+      "sha256": "48491B911441C57D99F63FA381B566C8466925692803332A1FB9576289122DAD"
+    },
+    {
+      "path": "architecture/references/verification-and-data.md",
+      "sha256": "1363E146A15CE8609DE11DBD7BFC96A49B79D51AD799D77778343B75BED93B9D"
+    },
+    {
+      "path": "code-quality/SKILL.md",
+      "sha256": "C19231B25795F7924C07748169F7BE65AFAADF7DAC40986513B38086DABD3BDD"
+    },
+    {
+      "path": "code-quality/agents/openai.yaml",
+      "sha256": "F183C6B92EF503DA5BA481AF366DC8F1C631A1B87E86205CBD8335BBF1A4703A"
+    },
+    {
+      "path": "code-quality/references/review-and-tests.md",
+      "sha256": "E77FBE8784AEA4BDDDF034F7A7F900760A465D8ED74F24BFC1EA7B436EDE38AE"
+    },
+    {
+      "path": "design-standards/SKILL.md",
+      "sha256": "B8A27D0D355959211938A9BF9A46369F578586988F79FCE46D20E60E555DB354"
+    },
+    {
+      "path": "design-standards/agents/openai.yaml",
+      "sha256": "767CEC489B09D543EEB742369199A7064CDF7CF4DC86953C6BC32A43AF57686C"
+    },
+    {
+      "path": "design-standards/references/visual-verification.md",
+      "sha256": "BDD5A627D3401E7C33B8C79A5C1F5C9B618B07C4F358AE02532A96D584B4E32B"
+    },
+    {
+      "path": "product-docs/SKILL.md",
+      "sha256": "C22588BE1477404CBE7EF929531F7239188615C4A26E1BFBACEDCA8CEE81B789"
+    },
+    {
+      "path": "product-docs/agents/openai.yaml",
+      "sha256": "097A91BE82175ED06B66C41B7326F16B7CBFAAA172AF79B6609E1997A6D137EF"
+    },
+    {
+      "path": "product-docs/references/document-chain.md",
+      "sha256": "D7F845F71D55095189FD57CEA0C3852D2E67B92913339206A1F67E1DCBC5E2E7"
+    },
+    {
+      "path": "product-docs/references/governance-rules.md",
+      "sha256": "BB20314E3C5B5FF5ED0FF13BC71AE2CAE56B735702CB5479B3C06E16D7CAEB7D"
+    },
+    {
+      "path": "product-docs/references/greenfield-init.md",
+      "sha256": "6A2A1CAD661F5E43786609248FD9EE3690A1A7C1F8166813B430C15D1A46E909"
+    },
+    {
+      "path": "product-docs/references/intent-plan-lifecycle.md",
+      "sha256": "6CEF1AFBF8384D3BA73640AF6C769E46EFE53D4C446C64CB4894A67DF7067F6C"
+    },
+    {
+      "path": "product-docs/references/intent-preservation.md",
+      "sha256": "A97F2C3C5FE04429CC17B94647CC84D87487F05A44A9F44642C865A27C0E3130"
+    },
+    {
+      "path": "product-docs/references/quality-specialization-plan.md",
+      "sha256": "D92FEAAF6432D72E6ABFA6280B5397ACCE79E75812E0CCE52B76AC7CB3E4C469"
+    }
+  ],
+  "removed": [
+    "architecture/references/structure-and-topology.md",
+    "code-quality/references/debugging.md"
+  ]
+}

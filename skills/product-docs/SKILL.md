@@ -2,7 +2,7 @@
 name: product-docs
 description: Maintain product and system documentation, authority, traceability, and delivery governance across discovery, definition, delivery, real-use recovery, closure, and operations. Use when defining or revising requirements, PRDs, acceptance criteria, design specifications, architecture, development process, status, test traceability, ownership, or human/Agent responsibilities. Preserve user intent, isolate external advice, map the existing authority chain, research real routes when relevant, keep multi-axis progress and evidence honest, propagate only real consequences, and use risk-based validation.
 metadata:
-  version: "1.0.4"
+  version: "1.0.5"
 ---
 
 # Product Docs
@@ -48,137 +48,27 @@ For an empty or newly initialized repository, use the optional
 before generating documents. Keep this route conditional; an established
 repository keeps its existing chain.
 
-After any required recovery reconciliation, make the capture the first completed
-task action, not a promise to document later.
-At every full recovery boundary—new session, context loss or compaction,
-Agent/task handoff or interruption that may lose control/context, a long pause
-with uncertain execution state, or an explicit user instruction such as
-`continue`, `resume`, or `pick this back up`—first read any available
-goal/task-state record. If no such record exists, continue with the active plan.
-An ordinary synchronous tool, command, or API failure that
-returns a clear result while the current turn and governing task remain intact
-is not a full recovery boundary; handle or retry it locally. For an ambiguous
-stateful failure, reconcile the affected external state and rerun the full hook
-only when control/context or task identity may also have been lost. Then
-immediately follow the repository's shallow recovery hook to its authoritative
-active plan/progress control and reconcile the single current item before
-reading the general authority index, current intent, older history, or queue. Treat a
-continue/resume instruction as authorization to continue the governing goal,
-not to select the most recently visible subtopic. Missing summary, checkpoint,
-or tool-state detail is `unknown`, not evidence that work is unfinished or
-authorization to change state. Preserve the current active goal and terminal
-states by default. A next-start item marked held, paused, or
-`requires-explicit-resume` remains queued after the current item reaches
-terminal; promote it only when its declared authority condition is satisfied.
-Read verbatim recovery evidence only
-when the normal chain cannot resolve serious drift, conflict, blockage, or an
-audit/recovery question. If no durable progress control exists, update the
-smallest existing planning/status artifact; do not create a competing authority
-merely to remember the instruction.
+After any necessary recovery check, make this capture the first completed task
+action, not a promise to document later. Keep the current work, next step,
+protected boundary, and key evidence recoverable in the existing progress record.
+Persist route-changing conclusions before long work or handoff, not every tool call.
 
-Keep the active plan as a compact dynamic hot path, not a copy of stable
-lifecycle policy or completed history. When the goal is missing/terminal, the
-active marker is empty, and live conversation contains an explicit new request,
-finish recovery there and read only the authorities that request actually needs.
+On context loss or resume, reconcile the latest unfinished user request with
+existing progress and completion evidence. Do not replay a completed instruction;
+if only the documentation lags a proven result, do only the missing writeback.
+Handle clear ordinary failures locally; inspect ambiguous real state before retry.
+No named task object, runtime Goal, API, or new coordination protocol is required.
+Shared writes reread current content and existing ownership first; keep changes
+minimal, and stop on overlap or unclear execution identity, including forked IDs.
 
-Reconcile three recovery layers: live conversation, goal runtime state, and
-durable documents. The live layer is newest but most vulnerable to compaction
-damage; the goal layer carries the short- or medium-term scope across sessions
-and may pause; documents preserve the same scope's durable state and hard
-boundaries but may lag one terminal writeback.
+At terminal, preserve durable results and unresolved obligations, then mark the
+work complete or remove a successful temporary anchor that has no remaining
+evidence value. Do not delete unique user wording or completion/recovery evidence.
+Held work does not resume automatically. See
+[the lifecycle reference](references/intent-plan-lifecycle.md) when designing
+capture, shared-writing, recovery, or cleanup behavior; it owns those details.
 
-When multiple Agents share a workspace, read a small workspace-local
-coordination list before mutation. It contains only `agent_id`, `scope`, and
-`status`; stop if another Agent owns an overlapping scope. This is a
-write-conflict guard, not a new authority, lock, or tool protocol. With one
-Agent, skip only the list and continue through the current goal and active
-item; read-only work does not need an entry. See
-`references/intent-plan-lifecycle.md` for handoff rules.
-
-Before selecting work, exclude instruction instances already proved terminal.
-Then select unfinished work in this closed order:
-
-```text
-newest unfinished user instruction established from live conversation at recovery
--> started goal
--> current executable instruction in durable documents
--> paused goal
--> compacted recovery context
--> pre-compaction instruction
-```
-
-A lower-ranked candidate cannot displace a higher-ranked one. Compacted context
-and pre-compaction instructions are locating evidence only until reconciled with
-live, goal, or document authority; stop rather than infer authorization when
-their identity or state cannot be verified.
-
-Treat completion evidence as an increasingly durable replay prohibition:
-
-```text
-explicit completion report in live conversation
-< goal progress marked terminal
-< durable documents marked terminal or removed by successful terminal cleanup
-```
-
-Every level forbids rerunning the same instruction instance unless the user
-explicitly reissues it as a new instruction or new verifiable evidence
-invalidates its terminal. A later level cannot be weakened by an older `in
-progress` message or compacted summary. When live evidence proves completion but
-goal or documents lag, perform only the missing terminal writeback and
-goal/stage completion; do not rerun the work, tests, publication, release, or closure. Read
-`references/intent-plan-lifecycle.md` for reconciliation cases.
-
-Change the current active goal only after an explicit user override, a valid
-terminal that promotes the agreed next item, or an authority-approved replan for
-a real blocker. A blocker alone marks the current item blocked; it does not
-authorize replacing it. Do not reopen `resolved`, `superseded`, or `closed` work
-because context is incomplete, an Agent wants to re-audit it, or the result can
-still be improved. Reopen only on an explicit user instruction or new verifiable
-evidence that invalidates the terminal, and preserve the prior terminal plus the
-reopen source and impact. After each user-numbered subtask or declared stage
-terminal, update the active item before starting the next one.
-
-Record each active-goal transition with a closed type enum such as
-`user-explicit-goal-start`,
-`user-explicit-goal-override`, `legal-terminal-auto-promote`, or
-`authority-approved-blocker-replan`, plus an affirmative evidence sentence
-whose prefix matches that type. Reject keyword-only or negated transition text.
-
-After analysis forms a conclusion that changes the remaining route, after a
-declared execution terminal, when a shared blocker invalidates downstream work,
-or before long/context-heavy work or handoff, update the corresponding active
-item with a concise Agent-attributed temporary subplan. Record the conclusion,
-next action, protected boundary, and evidence entry point—not private chain of
-thought, every command, or every local check. Use this threshold: losing the
-update would make the next Agent take a different route or repeat substantial
-work.
-
-Treat a plan/progress capture made only to anchor a bounded read-only request as
-a temporary execution record, not permanent product history. At the request's
-explicit terminal:
-
-1. Promote any durable decision, correction, unresolved obligation, run fact,
-   failure, or handoff evidence to its proper authority first.
-2. Delete the temporary anchor when the work succeeded, no obligation remains,
-   and deleting it loses no evidence needed for audit, recovery, or handoff.
-3. Keep and mark it terminal when the primary progress authority intentionally
-   preserves history, or when the request failed, was blocked, was interrupted,
-   or still has a follow-up obligation. Record the terminal reason.
-4. When the progress authority uses a next-start queue, promote only an item
-   whose declared policy permits automatic promotion. Keep held, paused, or
-   explicit-resume items queued; an empty current slot is correct when every
-   remaining item requires new authority.
-
-Never delete direct-wording evidence, an adopted decision, live status, or
-completion evidence merely because the task that captured it ended. Do not let
-temporary anchors accumulate as a shadow backlog, and do not delete one before
-its durable consequences have been promoted.
-
-Read `references/intent-plan-lifecycle.md` before creating or substantially
-changing current-intent, verbatim-recovery, active-plan, or progress-control
-roles, and before designing their curation, size, status, or terminal cleanup.
-
-Read `references/greenfield-init.md` before initializing an empty repository or
+Read references/greenfield-init.md before initializing an empty repository or
 choosing an initial authority chain.
 
 ## Establish Authority And Mode
@@ -188,12 +78,10 @@ Before assessing, reporting, or editing:
 1. Read local instructions and discover the repository's authority index or
    equivalent documents. Do not assume filenames, numbering, or one file per
    role.
-2. Check whether root-level local instructions or README expose a mandatory,
-   explicitly bounded recovery-hook block to the active-plan authority. When
-  recovery safety matters and no shallow hook exists, add the smallest bounded
-  link-and-order hook that preserves the deeper document as the sole lifecycle
-  authority. Validate that any goal/task-state record is read before the Active Plan
-   link inside the block, and add a mutation that reverses that order.
+2. Locate the existing current-work and evidence entry points when recovery is
+   needed. Add a short navigation link only if the task includes documentation
+   setup and the current authority would otherwise be hard to find; do not
+   create a required API/order hook or duplicate its policy.
 3. Identify the lifecycle mode: discovery, definition, delivery,
    real-use/recovery, closure, or operations.
 4. Classify the request by its highest affected role: intent/requirements,

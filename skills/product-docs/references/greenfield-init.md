@@ -52,10 +52,10 @@ complete a template.
 
 ## Recovery And Sources
 
-Add a bounded root recovery hook only when recovery safety is in scope and a
-deep active-plan authority exists. The hook should name the goal/task-state API
-first, link to the active plan second, and state that the linked authority owns
-the lifecycle. It is navigation, not a second plan.
+When the task includes repository setup and recovery would otherwise be hard,
+add a short navigation link to the existing current-work authority. Follow
+intent-plan-lifecycle.md for recovery behavior; do not require a platform API,
+a particular task object, marker protocol, or a second plan.
 
 For public repositories, keep private source bodies, private locators, private
 case mappings, and private provenance outside the repository unless a user
@@ -90,10 +90,9 @@ flag.
 Before claiming the scaffold is verified:
 
 1. Resolve internal links and validate the authority index.
-2. Check the recovery hook only inside its marker boundaries, accepting both LF
-   and CRLF input.
-3. Apply a temporary mutation that reverses the required API/Active Plan order
-   and confirm the checker rejects it; discard the mutation after the check.
+2. Verify that current-work and evidence navigation resolves where applicable.
+3. Check that a completed result is not replayed merely because writeback lags,
+   and that a clear local failure does not restart full recovery.
 4. Scan public repository candidates for private locators, credentials, raw
    case material, and forbidden paths.
 5. Record real command/API readback separately from file existence.

@@ -10,10 +10,15 @@ description: >-
   describe image content (vision-recognition). Keywords — 质检, 自检, 验收,
   白边, 黑边, 虚边, 毛边, 游离噪点, 画框标注, matte QC, alpha, halo, PAG.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Vision QC
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 The acceptance gate after matting or rendering. Four steps, and the order is the
 point: measure, expose, look, mark.

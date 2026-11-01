@@ -2,7 +2,7 @@
 name: design-standards
 description: Develop and apply reusable visual and interaction standards through moodboards, adopted principles, standards libraries, templates, rendered self-checks, refinement, and versioned reuse. Use for design systems, visual guidelines, reusable templates, or visual acceptance of actual interfaces, documents, presentations, and other artifacts. Product goals and final acceptance stay upstream; backend architecture and code verification remain separate.
 metadata:
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # 设计规范
@@ -30,21 +30,12 @@ rendered output and a targeted check; it does not require a new design system.
 
 ## Explore, Adopt, And Specify
 
-Before collecting references, extract three to five quality words from the actual
-requirement and have them confirmed. References gathered before the words are
-fixed drift toward whatever looked good that day.
-
 1. When exploring, make reference directions useful for the audience and task:
    mood, hierarchy, density, typography, color, composition, and material/media
    treatment. Label sources and alternatives as exploration; a moodboard is
    not an adopted standard or acceptance evidence.
 2. Translate the chosen direction into observable principles and rules, stating
-   what is adopted, proposed, or unresolved. For a key visual surface, put two or
-   three candidates side by side, each with one sentence on how it differs. The
-   user chooses; this layer's job is to make the difference legible, not to decide.
-   Write each rule so it can be judged: a value, a range, or a property visible in
-   the render. Words that cannot be judged belong in the moodboard, not in the
-   standard. Routine reversible design choices
+   what is adopted, proposed, or unresolved. Routine reversible design choices
    within the authorized scope can be made by the Agent; material changes to
    audience, content, value judgments, or product acceptance return upstream.
 3. Build or extend only the necessary standards library: semantic colors,
@@ -54,15 +45,10 @@ fixed drift toward whatever looked good that day.
 4. Turn repeatable structure into templates with fixed rules, variable content,
    supported sizes/states, and boundaries for exceptions. For software, connect
    visual rules to actual tokens/components and their adopted version. For
-   documents or slides, use their native styles/layouts where appropriate. For
-   generated or rendered output, anchor the brief on real reference images and
-   state the prohibitions explicitly: no invented lettering, numerals, logos, or
-   watermarks. What is not forbidden will eventually appear.
+   documents or slides, use their native styles/layouts where appropriate.
 5. Read [visual-verification.md](references/visual-verification.md) when creating
    standards/templates or reviewing/refining an output. Select relevant visual
    cases and expected results before issuing guidance.
-   Read it also for screen-by-screen comparison against a reference, prompt writing,
-   magnified text checks, and converging adjustments.
 6. Issue standard/template references, accepted version, actual content and
    medium constraints, required states, and visual acceptance checks to the
    implementation. Keep the guidance in the existing design authority or
@@ -89,14 +75,14 @@ behavior where authorized and possible. For a document, slide, diagram, or
 template, inspect affected pages/slides and the actual intended export medium.
 Do not replace a native render with an unrelated mockup and call it accepted.
 
-Lift dark output before judging it. "Everything is black" is treated as
-unreadable first, not as a verdict; a brightness check costs less than a redesign.
-
 Check hierarchy, typography, spacing, alignment, overflow, readability, imagery,
 navigation/evidence links, and applicable state/accessibility rules. Validate
 content completeness and real status meaning as well as appearance. Record
 concrete defects by location/state, violated rule or task outcome, and evidence.
 Prioritize unusable or misleading outputs before cosmetic refinement.
+Preserve required subject features and content. A brightened or otherwise
+processed diagnostic view may explain a defect, but cannot replace acceptance
+of the original deliverable under its intended viewing conditions.
 
 In an authorized application/refinement task, fix defects within scope or return
 them to the implementing layer. Re-render and re-inspect affected outputs after
@@ -104,10 +90,6 @@ changes; retain remaining gaps explicitly. In review-only mode, return findings
 without edits. Do not invent an arbitrary number of polish passes: stop when
 the applicable checks pass, the scope terminal is reached, or a real limitation
 prevents further verification.
-
-Visual review enforces the adopted standard; it does not redesign. A failing
-output leaves with a difference list against the rule, and the fix returns to the
-implementing layer.
 
 Required visual cases must have actual inspected evidence before a visual pass.
 Reuse adequate evidence for unchanged unaffected output. A selected screenshot
@@ -138,6 +120,3 @@ Keep product acceptance, visual acceptance, and architecture/code checks
 distinct. Close the visual loop on actual artifacts before returning its
 conclusion; a delivered standards library or template alone closes only the
 standards task, not visual acceptance of an implementation that was never seen.
-
-<!-- 2026-10-24: criteria adapted from a parallel-environment layered skill set;
-     project-specific bindings excluded. -->

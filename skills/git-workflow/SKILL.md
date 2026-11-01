@@ -10,10 +10,15 @@ description: >-
   push, PR, 合并, squash, rebase, worktree, conventional commits, 回滚, revert,
   推送前检查, 密钥泄漏.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Git Workflow
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 The default branch only receives reviewed, revertible changes. Everything else
 happens on a branch that ends in a squash merge. This costs one command more

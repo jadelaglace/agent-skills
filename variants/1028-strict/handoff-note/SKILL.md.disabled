@@ -1,0 +1,147 @@
+---
+name: handoff-note
+description: >-
+  Produce an evidence-audited handoff from conversations, session records,
+  supplied notes, and current project state. Use for complex handoffs requiring
+  explicit provenance, conflict resolution, and replay protection.
+metadata:
+  short-description: "Strict evidence-audited handoff (inactive)"
+  version: "1.0.0"
+---
+
+# Handoff Note: Strict Evidence Mode
+
+This inactive derivative uses the 1028 handoff-note source as its trunk. Its
+weak-capability-LLM design background is user-provided provenance, not a measured
+capability rating. This is a corrected derivative, not original text. See
+[coverage and corrections](COVERAGE.md). Keep it outside discovery roots;
+activation requires separate approval.
+
+## 1. Establish scope and sources
+
+Identify the handoff scope and actual available sources: conversation, supplied
+notes, project documents, session records, repository, or a remote system.
+Label unavailable sources; never imply access. Expand the relevant source set
+only when a conflict or consequential claim requires it, not mechanically
+through every historical session.
+
+Reconstruct meaningful instruction changes, fixed terminology, decisions,
+completed results, and unresolved choices. Distinguish direct user messages
+from injected environment text, Assistant conclusions, tools, and compressed
+summaries. A summary or prior handoff is a lead, not proof.
+
+For large archives, use bounded reads or isolated temporary extraction. Keep
+source identity and check extraction completeness. Prefer an available supported
+session interface; inspect raw records when needed and authorized. Missing
+records do not prove no work occurred. Available runtime status can inform the
+timeline, but no platform Goal API or fixed enumeration is required. Check
+fork lineage and duplicated history when relevant; timestamps alone do not
+identify new work.
+
+## 2. Separate authority from observation
+
+Keep these distinct:
+
+- latest user intent, authorization, constraints, and acceptance;
+- current plan and adopted documented decisions;
+- observed files, Git state, tests, services, and remote state;
+- Agent interpretations, external advice, and unverified claims.
+
+User intent governs what should happen. Current evidence establishes what
+actually happened. Report discrepancies; disk state cannot silently rewrite
+requirements, authorization, or acceptance. For each consequential claim,
+identify evidence, scope, and freshness. Verify mutable facts before reporting
+them. Existence, mtime, and old notes alone do not establish authorship,
+execution, acceptance, or publication.
+
+Reconcile stale snapshots with primary evidence. Treat garbled, duplicated,
+truncated, and stale text as uncertain; preserve a useful kernel only when
+supported. Give a short discrimination table when material to continuation.
+Do not invent missing text or discard user instructions merely for unusual
+wording. Report source said X versus observation Y, not only one side.
+
+## 3. Protect terminality and shared changes
+
+Separate completed, unfinished, paused, skipped, blocked, and waiting work.
+An explicit completion report, runtime terminal marker, or durable completion
+record prohibits replay of that instruction instance unless new evidence
+invalidates it or the user explicitly starts it again. Reuse adequate terminal
+evidence. If only documentation lags a proven result, do only the missing
+writeback; do not rerun tests, publication, or cleanup for the narrative.
+
+Preserve known defects, failed routes still relevant to the next decision,
+rollback constraints, data-loss risks, explicit non-authorizations, and held
+work's resume condition. Remove irrelevant process noise, not these lessons.
+A handoff does not start a queued task or authorize a mutation.
+
+For mixed diffs, inspect staged, unstaged, and untracked changes as relevant.
+Use session scope, patches, Git evidence, and known ownership together; mtime
+is only a clue. Unknown ownership stays unknown. Propose commit boundaries
+only where supported; do not split, commit, or push without authorization.
+
+Before a shared write, reread current files and existing ownership; change
+only the smallest nonconflicting scope. Stop the affected write on overlap or
+uncertain identity, including inherited fork identities. Read-only handoffs
+need no identity registry, mandatory coordination list, or locking protocol.
+
+## 4. Select claim-specific checks
+
+Check consequential mutable claims relevant to this handoff; do not impose an
+unrelated universal audit. If a check is unsafe, unavailable, outside authority,
+or unnecessary, record that limit. Unchecked remote state remains unknown.
+
+| Claim | Relevant evidence | Limit |
+| --- | --- | --- |
+| Repository | Revision, status, relevant diff; stash/subrepositories/upstream when material | Local state does not prove remote freshness; never restore or clean merely to tidy a handoff |
+| Artifacts | Actual paths, contents, scoped counts/hashes | Old denominators do not prove completeness |
+| Tests | Recorded command, input/revision, scope, terminal result | Narrow tests are not whole-product acceptance; no automatic rerun |
+| Service/device | Safe read-only probe of the named capability | A listening port alone is not the user workflow |
+| Delivery | Specific remote revision, release, or installation readback | Commit, tag, push, Release, and local installation are separate claims |
+
+Tools are conditional adapters. Source-specific Codex/DSH paths, projcache,
+JSONL layouts, shell behavior, and Node versions are not portable facts.
+Probe actual capabilities on a small sample before bulk archive decoding.
+Preserve raw bytes; check decompression completeness across frames and text
+encoding. A decoder failure does not prove an empty archive. Choose available
+read/search tools without a universal shell ban or fixed scripting language.
+On pipe/process failures inspect current restrictions before safe file
+mediation; never assume a historical sandbox or bypass access controls.
+
+## 5. Compose one continuation-ready note
+
+Use the user's language, Chinese by default; detail should match continuation
+risk. Avoid raw logs, diff statistics, and transcripts unless the data itself
+is the conclusion. Numbers and identifiers need source support; label estimates
+and unknowns. Do not expose credentials or unnecessary private material.
+
+Chat is the default destination. Honor explicit durable-doc requests through
+the project's existing authority. A handoff alone does not authorize project
+edits or a new parallel authority.
+
+Default outline; compact or combine only without losing material substance:
+
+1. **Identity/current state**: relevant source IDs, time range and lineage,
+   repository/version, known current work or pause state.
+2. **Goal/decisions**: instruction evolution, fixed terms, constraints, and
+   latest authorized direction.
+3. **Completed results**: evidence-backed outcomes with validation limits.
+4. **Current facts/discrepancies**: relevant workspace, installation, service,
+   remote observations; source said X versus observed Y where conflicting.
+5. **Unfinished work**: ordered next actions, blockers, user choices, and held
+   work that must not automatically resume.
+6. **Pitfalls/red lines**: failed routes, environment caveats, mixed ownership,
+   rollback/replay prohibitions, and useful evidence locations.
+
+End with one sentence stating where work stopped and the first safe next
+action, or that no continuation is authorized.
+
+## 6. Delivery self-check
+
+- Latest intent and authorization remain intact.
+- Decisions, suggestions, observations, and evidence limits are distinct.
+- Consequential claims have scoped evidence or explicit uncertainty.
+- Conflicts and mixed ownership are disclosed, not guessed.
+- Completed work cannot be mistaken for unfinished work.
+- Outstanding items have priorities and a concrete next safe action.
+- Important lessons, resume conditions, and private-data boundaries survive.
+- Requested destination and final starting point are clear.

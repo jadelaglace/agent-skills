@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "sourceBatch": 1028,
+  "date": "2026-11-01",
+  "transcriptionRevision": 1,
+  "status": "visually-checked-transcription-not-byte-identical-source",
+  "activation": "private-non-installable-corpus",
+  "normalization": "Whitespace, punctuation, wrapped English, table and list layout normalized; source technical and authority claims retained without correction",
+  "sources": [
+    {
+      "file": "OPLUSDRAG_com.tencent.wework_SubsamplingScaleImageView_2026-10-27_20_15_15.png",
+      "sha256": "2159D81297B3E77C86D5F62A815A05858434D29123734B2D1ED2D500F4C72A03",
+      "archiveOrder": 26,
+      "printedPage": 29
+    },
+    {
+      "file": "OPLUSDRAG_com.tencent.wework_SubsamplingScaleImageView_2026-10-27_20_15_23.png",
+      "sha256": "BA32929288C741D5E9C91E937658D427A0017E8FD76D15327DC8E224645BA751",
+      "archiveOrder": 27,
+      "printedPage": 30
+    }
+  ],
+  "text": {
+    "name": "handoff-note",
+    "file": "original.txt",
+    "bytes": 7173,
+    "sha256": "DF96DEAF5864F2E5B05355F0893215BC3A0D4F265F25739BBF40973B70FAB7DC"
+  }
+}

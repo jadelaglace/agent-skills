@@ -10,10 +10,15 @@ description: >-
   Keywords — PowerShell, pwsh, 5.1, 脚本, 数组, 返回, 管道, 编码, BOM, 乱码,
   中文, Invoke-WebRequest, stderr, LASTEXITCODE.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # PowerShell
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 PowerShell is not "bash with objects". Its output model, its array behaviour and
 its error model each produce bugs that look like logic errors but are language

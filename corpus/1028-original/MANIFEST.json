@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "sourceBatch": 1028,
+  "transcriptionRevision": 1,
+  "date": "2026-11-01",
+  "status": "sealed-with-marked-non-rule-glyph-uncertainty",
+  "activation": "not-installable-corpus",
+  "normalization": "line-wrap whitespace list/table layout and quote typography; source semantic and version inconsistencies retained",
+  "sources": [
+    {
+      "file": "OPLUSDRAG_com.tencent.wework_SubsamplingScaleImageView_2026-10-27_20_14_19.png",
+      "sha256": "0E535A6A84F0826E3C7A68831C0EC07E9333CDABEB5BC6238ACC97F1855270D4"
+    },
+    {
+      "file": "OPLUSDRAG_com.tencent.wework_SubsamplingScaleImageView_2026-10-27_20_14_25.png",
+      "sha256": "4AA426606D37E710E1B493C33ECD0B9BA9F1D93C24C355B68776F88E39F33092"
+    },
+    {
+      "file": "OPLUSDRAG_com.tencent.wework_SubsamplingScaleImageView_2026-10-27_20_14_32.png",
+      "sha256": "1C62F9174CA6750A8D595A7A60ADCF7B4CD59DDD7BF8B2510D238FFA1111827C"
+    }
+  ],
+  "texts": [
+    {
+      "name": "project-docs",
+      "file": "project-docs/original.txt",
+      "sha256": "DD25338B38DED419DCF1BE6DC9E46FAAFDBF2001528C1A665BBAC7BA6FA16A1F",
+      "bytes": 15372,
+      "printedPages": [
+        25,
+        26
+      ]
+    },
+    {
+      "name": "project-design",
+      "file": "project-design/original.txt",
+      "sha256": "8E67EE7A8DC1A65E93FBA624254D76FBAFAC7C8D84AC073D59D935635CA4ADA9",
+      "bytes": 8436,
+      "printedPages": [
+        26
+      ]
+    },
+    {
+      "name": "project-arch",
+      "file": "project-arch/original.txt",
+      "sha256": "5095B1941C3A53BFB263D9AACA3D85A948F32127D12C5AEB5C7F784A9F13E941",
+      "bytes": 9585,
+      "printedPages": [
+        26,
+        27
+      ]
+    },
+    {
+      "name": "project-dev",
+      "file": "project-dev/original.txt",
+      "sha256": "96F85BAC50F3FBB5FABAEA4E10A824993BB6034C80051EF87B33DEF8A0057E81",
+      "bytes": 8394,
+      "printedPages": [
+        27
+      ]
+    }
+  ]
+}

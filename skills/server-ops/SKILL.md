@@ -12,10 +12,15 @@ description: >-
   重启, 排障, pkill, 端口释放, 反向代理, 502, drain, SSE, GPU 显存, 探针,
   nohup, 恢复脚本, server ops.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Server Ops
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 Remote triage is mostly a question of **which layer answered**. Every item below
 exists because it misleads you if you assume the wrong layer.

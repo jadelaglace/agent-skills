@@ -1,0 +1,822 @@
+{
+  "date": "2026-11-01T06:54:56.415Z",
+  "head": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+  "push": "not-performed-this-task; remote content not queried",
+  "skills": [
+    {
+      "name": "architecture",
+      "version": "1.1.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 275,
+          "sha256": "48491B911441C57D99F63FA381B566C8466925692803332A1FB9576289122DAD"
+        },
+        "references/verification-and-data.md": {
+          "bytes": 5022,
+          "sha256": "1363E146A15CE8609DE11DBD7BFC96A49B79D51AD799D77778343B75BED93B9D"
+        },
+        "SKILL.md": {
+          "bytes": 7386,
+          "sha256": "94DA4DBFE28E51281FF12BFBF08251B61CD57DB1AE885C49AC43EFF7DC632F24"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "installed-same",
+          "files": {
+            "agents/openai.yaml": {
+              "bytes": 275,
+              "sha256": "48491B911441C57D99F63FA381B566C8466925692803332A1FB9576289122DAD"
+            },
+            "references/verification-and-data.md": {
+              "bytes": 5022,
+              "sha256": "1363E146A15CE8609DE11DBD7BFC96A49B79D51AD799D77778343B75BED93B9D"
+            },
+            "SKILL.md": {
+              "bytes": 7386,
+              "sha256": "94DA4DBFE28E51281FF12BFBF08251B61CD57DB1AE885C49AC43EFF7DC632F24"
+            }
+          }
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "70c18bd9df346e0e3cd555f95c75350eb644e649",
+      "workingTreeDelta": "M\tskills/architecture/SKILL.md\nD\tskills/architecture/references/structure-and-topology.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "code-quality",
+      "version": "1.1.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 271,
+          "sha256": "F183C6B92EF503DA5BA481AF366DC8F1C631A1B87E86205CBD8335BBF1A4703A"
+        },
+        "references/review-and-tests.md": {
+          "bytes": 4910,
+          "sha256": "E77FBE8784AEA4BDDDF034F7A7F900760A465D8ED74F24BFC1EA7B436EDE38AE"
+        },
+        "SKILL.md": {
+          "bytes": 7546,
+          "sha256": "72C894CF05183B746061DA7AD3DFB0C1F32B5FE72406EE38DEE9A5537172FD74"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "installed-same",
+          "files": {
+            "agents/openai.yaml": {
+              "bytes": 271,
+              "sha256": "F183C6B92EF503DA5BA481AF366DC8F1C631A1B87E86205CBD8335BBF1A4703A"
+            },
+            "references/review-and-tests.md": {
+              "bytes": 4910,
+              "sha256": "E77FBE8784AEA4BDDDF034F7A7F900760A465D8ED74F24BFC1EA7B436EDE38AE"
+            },
+            "SKILL.md": {
+              "bytes": 7546,
+              "sha256": "72C894CF05183B746061DA7AD3DFB0C1F32B5FE72406EE38DEE9A5537172FD74"
+            }
+          }
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "70c18bd9df346e0e3cd555f95c75350eb644e649",
+      "workingTreeDelta": "M\tskills/code-quality/SKILL.md\nD\tskills/code-quality/references/debugging.md\nM\tskills/code-quality/references/review-and-tests.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "comfyui-generate",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 244,
+          "sha256": "8B6EAAF5C6D018962FE9C689F8656C70CBEE0A96AC02C8D8D46B15BE79DAC450"
+        },
+        "references/workflow-contract.md": {
+          "bytes": 2201,
+          "sha256": "894A5F655FAD9EC5DFD2FB3694106FCA2C53F66858E282B1FE3CD0B24F46653E"
+        },
+        "scripts/comfy.py": {
+          "bytes": 16991,
+          "sha256": "FFEBD3D13BF2E71FF4252FF84E3AD426166D39C6A409186CB905761A953B1F15"
+        },
+        "SKILL.md": {
+          "bytes": 6271,
+          "sha256": "B3B807176C8FC311A4190A3174E14F886331C3983DADD660CA66E74DC7F7EA3C"
+        },
+        "tests/fixtures/img2img.json": {
+          "bytes": 1419,
+          "sha256": "6D457C4D3B0E620DF4C680D39CA4D9E837E1C9FB8D9D7B3CAC0EA9A06D8C557E"
+        },
+        "tests/fixtures/txt2img.json": {
+          "bytes": 1318,
+          "sha256": "3E9555387EB588E07B697D72A03875729450DD2FD87CE577184C6BA67CC72FDB"
+        },
+        "tests/run_tests.py": {
+          "bytes": 7412,
+          "sha256": "F6B7B32E1CBAAA92A32E142DF0AF3D8CD937A379FBDD19D683CFC7D2E5D61739"
+        },
+        "tests/stub_server.py": {
+          "bytes": 8591,
+          "sha256": "92E881F54EFD0C0211EF9920045527C46B8BFCC96D14B3762B19376B446A155F"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/comfyui-generate/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "course-docs",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 236,
+          "sha256": "DD8AD830246037C1E26BACF15D73BF749F8929B1AD2EE3BDDDF5F70363E918EA"
+        },
+        "scripts/course_check.py": {
+          "bytes": 4686,
+          "sha256": "D85E1E6C23FFB7A1789D12B2684BB27C4B5E88A969FC47BE9877AAC015BE0E97"
+        },
+        "SKILL.md": {
+          "bytes": 4659,
+          "sha256": "E902EA1A7ADA56959F6EC432F2C5A0521B9F43F58393EE4FC056EFADEA0A4736"
+        },
+        "tests/run_tests.py": {
+          "bytes": 3662,
+          "sha256": "8191C5771772B7BE8DD92DA3B506C3097D61D6DE63B81B9BC9B39AD5628693EF"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/course-docs/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "design-standards",
+      "version": "1.1.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 288,
+          "sha256": "767CEC489B09D543EEB742369199A7064CDF7CF4DC86953C6BC32A43AF57686C"
+        },
+        "references/visual-verification.md": {
+          "bytes": 4703,
+          "sha256": "BDD5A627D3401E7C33B8C79A5C1F5C9B618B07C4F358AE02532A96D584B4E32B"
+        },
+        "SKILL.md": {
+          "bytes": 7245,
+          "sha256": "7D53BC35725DC9ECD9D334CE4A675C06A9356427A3ABA0B6098FDFB8ECA91AB3"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "installed-same",
+          "files": {
+            "agents/openai.yaml": {
+              "bytes": 288,
+              "sha256": "767CEC489B09D543EEB742369199A7064CDF7CF4DC86953C6BC32A43AF57686C"
+            },
+            "references/visual-verification.md": {
+              "bytes": 4703,
+              "sha256": "BDD5A627D3401E7C33B8C79A5C1F5C9B618B07C4F358AE02532A96D584B4E32B"
+            },
+            "SKILL.md": {
+              "bytes": 7245,
+              "sha256": "7D53BC35725DC9ECD9D334CE4A675C06A9356427A3ABA0B6098FDFB8ECA91AB3"
+            }
+          }
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "70c18bd9df346e0e3cd555f95c75350eb644e649",
+      "workingTreeDelta": "M\tskills/design-standards/SKILL.md\nM\tskills/design-standards/references/visual-verification.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "git-workflow",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 230,
+          "sha256": "B24581BE431CC49174376AEF21218AC2C8E31926D91D28917328CD6D0415DA83"
+        },
+        "scripts/preflight.py": {
+          "bytes": 8537,
+          "sha256": "7001797F7169A3A3B571EAC0C9FAF60892247F126B584837AEDDDD7F35CFE75D"
+        },
+        "SKILL.md": {
+          "bytes": 6144,
+          "sha256": "7F61C5CC9680A0111A32D3717B7CA8D29037EB42DC4CADAC17E59C541366A203"
+        },
+        "tests/run_tests.py": {
+          "bytes": 6367,
+          "sha256": "55872E8322A9624646809A526152D67EB7ECED489479D3182762FD16B91D2959"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/git-workflow/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "gitea",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 223,
+          "sha256": "8D041E7238014469216557D82956EB56E572BB643CCB4CC55D55B84595E94213"
+        },
+        "scripts/gitea.py": {
+          "bytes": 5886,
+          "sha256": "9A69D3A49C19744F478614FE317F9F187EEE9B7B12EF6B409E5D71E1C4CBD1EF"
+        },
+        "SKILL.md": {
+          "bytes": 4371,
+          "sha256": "0247501C378138DCFEB642911C8DB38A62C4DE6ED047A0E5E97C8C2ADDD89CF8"
+        },
+        "tests/__pycache__/stub_server.cpython-312.pyc": {
+          "bytes": 8173,
+          "sha256": "40D31362571341E8930BCBC0B1E19C7958872B66DD85FEE5703E3EEC04729164"
+        },
+        "tests/run_tests.py": {
+          "bytes": 4872,
+          "sha256": "9DA842FEFD963633F35C0DEF4B4B3E6A7655C3C7C4D04746C18A6412D489D11F"
+        },
+        "tests/stub_server.py": {
+          "bytes": 4802,
+          "sha256": "2375FB5F583B2316843B3AC0EC3876E0E041A9CE2059534703A1DB9BDA96AA62"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/gitea/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "handoff-context",
+      "version": "1.0.3",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 264,
+          "sha256": "E89A30C7081A40518D6A20F357A667B123BD9936851714AE33D515245677F121"
+        },
+        "SKILL.md": {
+          "bytes": 3239,
+          "sha256": "BB7E0086B4E1F28E5604C101BE2DA8CCB6BAD9BFEBE747B78F5FC90A4B5DB80A"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "installed-same",
+          "files": {
+            "agents/openai.yaml": {
+              "bytes": 264,
+              "sha256": "E89A30C7081A40518D6A20F357A667B123BD9936851714AE33D515245677F121"
+            },
+            "SKILL.md": {
+              "bytes": 3239,
+              "sha256": "BB7E0086B4E1F28E5604C101BE2DA8CCB6BAD9BFEBE747B78F5FC90A4B5DB80A"
+            }
+          }
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/handoff-context/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "llm-api",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 259,
+          "sha256": "A643A868514A76337AF5ED488CEED7EDFA2AA39B5C1C30A208DA117720CB37A5"
+        },
+        "scripts/llm.py": {
+          "bytes": 8480,
+          "sha256": "1358DA8DECCA406D5F8BFD8544A8DF0A4E0A72311FA1A88C5AFB9FB995ADC1E0"
+        },
+        "SKILL.md": {
+          "bytes": 6017,
+          "sha256": "8406485E40530BAC11E8F3DE405B27366A506FA9988C829519BE723B386034AE"
+        },
+        "tests/run_tests.py": {
+          "bytes": 7472,
+          "sha256": "751CF900E27D95C97FBF61086FF4695505954CDD7B3F2447F0202360696FD955"
+        },
+        "tests/stub_server.py": {
+          "bytes": 4935,
+          "sha256": "E7E3D46B9A423DD6D7FA09F86FB1901434DA08CE0DC5B354553D00143A6681A5"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/llm-api/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "powershell",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 249,
+          "sha256": "9BBD325E45D480B228265CDD7415CC7D9C35719B19DC0636A49662C19DDF3EBF"
+        },
+        "scripts/check-gotchas.ps1": {
+          "bytes": 5705,
+          "sha256": "705DE1E21B12869B6074CADCFA01A2B8579A5722E6DAD219114CA95E448652C9"
+        },
+        "SKILL.md": {
+          "bytes": 6374,
+          "sha256": "9EABF07CC773848FE14517CD299E0C60C53955584AED5E2F0F430B3E15D2B76A"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/powershell/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "product-docs",
+      "version": "1.0.5",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 296,
+          "sha256": "097A91BE82175ED06B66C41B7326F16B7CBFAAA172AF79B6609E1997A6D137EF"
+        },
+        "references/document-chain.md": {
+          "bytes": 8285,
+          "sha256": "D7F845F71D55095189FD57CEA0C3852D2E67B92913339206A1F67E1DCBC5E2E7"
+        },
+        "references/governance-rules.md": {
+          "bytes": 8600,
+          "sha256": "BB20314E3C5B5FF5ED0FF13BC71AE2CAE56B735702CB5479B3C06E16D7CAEB7D"
+        },
+        "references/greenfield-init.md": {
+          "bytes": 5147,
+          "sha256": "F10FB754E33B620252C5F9BAC0490EB04BCD85142FC5370E600CF37FF3B4191D"
+        },
+        "references/intent-plan-lifecycle.md": {
+          "bytes": 4754,
+          "sha256": "29B42BCC77C05B169262CCDD3E2392519A22AE20575C8200812E9011882E6CA9"
+        },
+        "references/intent-preservation.md": {
+          "bytes": 3190,
+          "sha256": "A97F2C3C5FE04429CC17B94647CC84D87487F05A44A9F44642C865A27C0E3130"
+        },
+        "references/quality-specialization-plan.md": {
+          "bytes": 25702,
+          "sha256": "D92FEAAF6432D72E6ABFA6280B5397ACCE79E75812E0CCE52B76AC7CB3E4C469"
+        },
+        "SKILL.md": {
+          "bytes": 22251,
+          "sha256": "1A7615D28231F316801B282AEC63777BB421569AD2E6F96EE30FE10149D0F87C"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "installed-same",
+          "files": {
+            "agents/openai.yaml": {
+              "bytes": 296,
+              "sha256": "097A91BE82175ED06B66C41B7326F16B7CBFAAA172AF79B6609E1997A6D137EF"
+            },
+            "references/document-chain.md": {
+              "bytes": 8285,
+              "sha256": "D7F845F71D55095189FD57CEA0C3852D2E67B92913339206A1F67E1DCBC5E2E7"
+            },
+            "references/governance-rules.md": {
+              "bytes": 8600,
+              "sha256": "BB20314E3C5B5FF5ED0FF13BC71AE2CAE56B735702CB5479B3C06E16D7CAEB7D"
+            },
+            "references/greenfield-init.md": {
+              "bytes": 5147,
+              "sha256": "F10FB754E33B620252C5F9BAC0490EB04BCD85142FC5370E600CF37FF3B4191D"
+            },
+            "references/intent-plan-lifecycle.md": {
+              "bytes": 4754,
+              "sha256": "29B42BCC77C05B169262CCDD3E2392519A22AE20575C8200812E9011882E6CA9"
+            },
+            "references/intent-preservation.md": {
+              "bytes": 3190,
+              "sha256": "A97F2C3C5FE04429CC17B94647CC84D87487F05A44A9F44642C865A27C0E3130"
+            },
+            "references/quality-specialization-plan.md": {
+              "bytes": 25702,
+              "sha256": "D92FEAAF6432D72E6ABFA6280B5397ACCE79E75812E0CCE52B76AC7CB3E4C469"
+            },
+            "SKILL.md": {
+              "bytes": 22251,
+              "sha256": "1A7615D28231F316801B282AEC63777BB421569AD2E6F96EE30FE10149D0F87C"
+            }
+          }
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/product-docs/SKILL.md\nM\tskills/product-docs/references/document-chain.md\nM\tskills/product-docs/references/greenfield-init.md\nM\tskills/product-docs/references/intent-plan-lifecycle.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "report-render",
+      "version": "1.0.0",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 230,
+          "sha256": "A6B2C7A7B597E0FE5524F98BC83C55C9B9821710FC40FBE7CBAF25899A685EA7"
+        },
+        "references/render-qc.md": {
+          "bytes": 1123,
+          "sha256": "A312B8E11ED90BE9ED48665D984350A046A5D0A03114B1550E05184B90589404"
+        },
+        "SKILL.md": {
+          "bytes": 3570,
+          "sha256": "4F0E8A2AA9B80B841208DECB2B98A25DB83DFFAD77B8414D97B587EF5BA7CC20"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "installed-same",
+          "files": {
+            "agents/openai.yaml": {
+              "bytes": 230,
+              "sha256": "A6B2C7A7B597E0FE5524F98BC83C55C9B9821710FC40FBE7CBAF25899A685EA7"
+            },
+            "references/render-qc.md": {
+              "bytes": 1123,
+              "sha256": "A312B8E11ED90BE9ED48665D984350A046A5D0A03114B1550E05184B90589404"
+            },
+            "SKILL.md": {
+              "bytes": 3570,
+              "sha256": "4F0E8A2AA9B80B841208DECB2B98A25DB83DFFAD77B8414D97B587EF5BA7CC20"
+            }
+          }
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "6c17cc794adeb98a5c0821822b1eb122d17431af",
+      "workingTreeDelta": "",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "research-report",
+      "version": "1.1.0",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 241,
+          "sha256": "28C1DBB7C5A59F3D10FBBA98F2DD80CC9BAB9AA37B33E74526FE8D91BD40FD20"
+        },
+        "references/evidence-register.md": {
+          "bytes": 820,
+          "sha256": "D562ADA905466A3444D9B5E65E01F99B9FBDEBA6C2A3581E7DF5FADA11F1C84B"
+        },
+        "SKILL.md": {
+          "bytes": 6707,
+          "sha256": "A5A7E0F0417D80893258203F76260F5CB44508F477AF9A13C5B4E512D0017932"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "installed-same",
+          "files": {
+            "agents/openai.yaml": {
+              "bytes": 241,
+              "sha256": "28C1DBB7C5A59F3D10FBBA98F2DD80CC9BAB9AA37B33E74526FE8D91BD40FD20"
+            },
+            "references/evidence-register.md": {
+              "bytes": 820,
+              "sha256": "D562ADA905466A3444D9B5E65E01F99B9FBDEBA6C2A3581E7DF5FADA11F1C84B"
+            },
+            "SKILL.md": {
+              "bytes": 6707,
+              "sha256": "A5A7E0F0417D80893258203F76260F5CB44508F477AF9A13C5B4E512D0017932"
+            }
+          }
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "6c17cc794adeb98a5c0821822b1eb122d17431af",
+      "workingTreeDelta": "",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "server-ops",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 263,
+          "sha256": "6CDB22CDBF460A51837442BDBD8743D4C4E0DA0EEA9828A4DB625F2434EF66FA"
+        },
+        "scripts/probe.py": {
+          "bytes": 4764,
+          "sha256": "4545CE63E72CEF71E71E033E64485BE7EC1033AD56D5365746EF69F560088E4F"
+        },
+        "SKILL.md": {
+          "bytes": 5444,
+          "sha256": "B4E51F1B2F8A8596A871EB88E28D06C3902114F554C2569AAA9661C0E1A93E80"
+        },
+        "tests/run_tests.py": {
+          "bytes": 5642,
+          "sha256": "6D78F509FA98D015C24E527968AFFD619E87C8C22519A533F4AC7176C5DA877C"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/server-ops/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "vision-matting",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 246,
+          "sha256": "EBBA2B98D4EBA0B32FFB8342863B66D943281255C8A0BF302B5035C297F26867"
+        },
+        "references/prompt_examples.md": {
+          "bytes": 2086,
+          "sha256": "BF18A02309BBBE96603B5A48A74C9D280BE5F737B5186019EFB3359774C65078"
+        },
+        "references/workflow.md": {
+          "bytes": 3607,
+          "sha256": "1DAFCB55DD617042F1046916B2944BFB62B3F56B4D4E65EF177B9AFB349115F8"
+        },
+        "scripts/cv_matte.py": {
+          "bytes": 15549,
+          "sha256": "0EE1F48151044129546F96859BCF604B17C07BA07DD65959612C62705451DA3A"
+        },
+        "scripts/run_layered_workflow.py": {
+          "bytes": 13513,
+          "sha256": "807A60C924590D31E6964C0A1FB99C161451EE2501B155A979A05C1230F73C22"
+        },
+        "SKILL.md": {
+          "bytes": 8859,
+          "sha256": "EFB453207BD6D889B84B0BD7F7408471950D896440ADFFD2083FFD4520932BA6"
+        },
+        "tests/make_fixtures.py": {
+          "bytes": 2378,
+          "sha256": "25EB2673F1DA2A3AC2B10FD76D6EC0388406615A4C87936C8A2FF87FAA03E20C"
+        },
+        "tests/workflow_fixture.json": {
+          "bytes": 530,
+          "sha256": "5B3F6E4CD249D8E7C408CBA0D11EF1717665A1F4C28F853C59E6A53588EE5A9C"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/vision-matting/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "vision-qc",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 249,
+          "sha256": "237C4D878AB6AB5BACB36F8A09B33F53AADDDF9BA220C90436C9B72109C6E829"
+        },
+        "references/video-qc.md": {
+          "bytes": 2880,
+          "sha256": "67E7B6CBFD823CDC3A04478ABAE0EA61F4951DEC2F11E4716D0E449775827822"
+        },
+        "scripts/cv_qc.py": {
+          "bytes": 16284,
+          "sha256": "1E9B79EE9AF045FF12BD528A9FFA2BD41338C4311A04A944B4C524B562E7DD80"
+        },
+        "SKILL.md": {
+          "bytes": 6358,
+          "sha256": "AD5C449D1511E8C4B115E5AE9E78E3EDA43B6FDE53B65218EE6384B6E25484A3"
+        },
+        "tests/make_fixtures.py": {
+          "bytes": 2056,
+          "sha256": "79BCBA79BF4B82965377C4F98F4F51D7B807FADD01063963F18121C42C5C6BD3"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/vision-qc/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    },
+    {
+      "name": "vision-recognition",
+      "version": "1.0.1",
+      "files": {
+        "agents/openai.yaml": {
+          "bytes": 244,
+          "sha256": "29FCC0F92703FBC8EFC1567435B9E856629224E58C88EE0A279E58E5ABB92D6E"
+        },
+        "scripts/cv_inspect.py": {
+          "bytes": 8291,
+          "sha256": "C7920E6C8EC202A55CBE7BD60EA9DE439FB16B474512AFDF1C907DD62F402F83"
+        },
+        "scripts/vision.py": {
+          "bytes": 10666,
+          "sha256": "8B87106F170250EC4EBE669C373B9FCBA857F9D1490FEE2F2E7A0228F1C0B252"
+        },
+        "SKILL.md": {
+          "bytes": 5518,
+          "sha256": "37F64CE72976CB1C08BE9AB248C2DC40B3C9E1E5CCB4CCDB958F13C7B6E50429"
+        }
+      },
+      "installations": {
+        "agents": {
+          "status": "absent",
+          "files": null
+        },
+        "codex": {
+          "status": "absent",
+          "files": null
+        }
+      },
+      "committedAt": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8",
+      "workingTreeDelta": "M\tskills/vision-recognition/SKILL.md",
+      "discovery": "SKILL.md exists; actual loading not observed"
+    }
+  ],
+  "strict": [
+    {
+      "name": "handoff-note",
+      "version": "1.0.0",
+      "files": {
+        "COVERAGE.md": {
+          "bytes": 3569,
+          "sha256": "2CCF5CBBCC316B73CFE0EAA1C9F1A2524EE22917E838DCB76A8BA9F0008A1309"
+        },
+        "SKILL.md.disabled": {
+          "bytes": 8049,
+          "sha256": "C72142130C2145DCC2635AD371E5883097151784013FE554ADD4493CF7B5DDA6"
+        }
+      },
+      "discoverable": false,
+      "installations": {
+        "agents": "absent",
+        "codex": "absent"
+      }
+    },
+    {
+      "name": "project-arch",
+      "version": "1.0.0",
+      "files": {
+        "SKILL.md.disabled": {
+          "bytes": 7985,
+          "sha256": "F03F2550500EBA031A8B6404BB0F8A0ED3E5BC742743B6DF72F3C38028A258F7"
+        }
+      },
+      "discoverable": false,
+      "installations": {
+        "agents": "absent",
+        "codex": "absent"
+      }
+    },
+    {
+      "name": "project-design",
+      "version": "1.0.0",
+      "files": {
+        "SKILL.md.disabled": {
+          "bytes": 6783,
+          "sha256": "CED790A3BE0A32D6CDFD4DA4A09FF83AF85CE4B88FA430346D3ABAF967D4F6D1"
+        }
+      },
+      "discoverable": false,
+      "installations": {
+        "agents": "absent",
+        "codex": "absent"
+      }
+    },
+    {
+      "name": "project-dev",
+      "version": "1.0.0",
+      "files": {
+        "SKILL.md.disabled": {
+          "bytes": 8485,
+          "sha256": "37F66749DC57F14CF77CA6B72D1A7BABBD31AEEFE35D761A45498E212A9CF7F2"
+        }
+      },
+      "discoverable": false,
+      "installations": {
+        "agents": "absent",
+        "codex": "absent"
+      }
+    },
+    {
+      "name": "project-docs",
+      "version": "1.0.0",
+      "files": {
+        "SKILL.md.disabled": {
+          "bytes": 8947,
+          "sha256": "71B462FE21CBB367A1F514DFFAFF42B12F081458E1767198082DB9EA7B834114"
+        }
+      },
+      "discoverable": false,
+      "installations": {
+        "agents": "absent",
+        "codex": "absent"
+      }
+    }
+  ]
+}

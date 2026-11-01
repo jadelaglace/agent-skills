@@ -10,10 +10,15 @@ description: >-
   Branch and commit conventions belong to git-workflow; this skill only moves
   API calls.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Gitea
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 Gitea's REST API is the same everywhere: `/api/v1` plus a token. The only thing
 that changes between installations is the host and the token, so neither is

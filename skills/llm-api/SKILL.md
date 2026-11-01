@@ -12,10 +12,15 @@ description: >-
   推理模型, thinking, reasoning_content, reasoning_effort, max_tokens, 截断,
   空回复, 调用模型.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # LLM API
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 The OpenAI chat contract is a de facto standard, and every implementation
 deviates a little. The deviations that cost time are not the big ones (auth,

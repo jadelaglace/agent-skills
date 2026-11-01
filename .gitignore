@@ -8,3 +8,6 @@ docs/validation/**/work/
 # Python bytecode from bundled scripts.
 __pycache__/
 *.pyc
+
+# Exact screenshot corpus may contain private environment details; never publish raw text.
+corpus/1028-original/**/original.txt

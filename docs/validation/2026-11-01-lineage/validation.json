@@ -1,0 +1,209 @@
+{
+  "date": "2026-11-01T10:18:21.028Z",
+  "checks": [
+    {
+      "name": "Exact replica note/version deltas and support-file preservation",
+      "status": "passed",
+      "detail": "10 skills; no algorithm/script change"
+    },
+    {
+      "name": "Previously completed skills preserved, including all four 17-file mainline identities",
+      "status": "passed",
+      "detail": {
+        "unchangedSkillFiles": 65,
+        "unchangedPriorVariantFiles": 5
+      }
+    },
+    {
+      "name": "Installed mainlines match complete repo trees, protected installations unchanged",
+      "status": "passed",
+      "detail": "7 installed trees same; only handoff entry changed this task"
+    },
+    {
+      "name": "No strict/corpus discovery or unintended installations",
+      "status": "passed",
+      "detail": "5 disabled variants, 10 replicas absent in both install roots"
+    },
+    {
+      "name": "Sealed handoff corpus identity and screenshot identity",
+      "status": "passed",
+      "detail": {
+        "pages": [
+          29,
+          30
+        ],
+        "negativeMutation": "wrong fingerprint rejected"
+      }
+    },
+    {
+      "name": "All five original texts ignored and not tracked",
+      "status": "passed",
+      "detail": 5
+    },
+    {
+      "name": "Index coverage, path and version consistency with negative tests",
+      "status": "passed",
+      "detail": {
+        "entries": 22,
+        "negativeTests": [
+          "version drift",
+          "missing path/entry",
+          "duplicate entry"
+        ]
+      }
+    },
+    {
+      "name": "Affected Markdown links and index anchor",
+      "status": "passed",
+      "detail": {
+        "files": 18,
+        "negativeTests": [
+          "broken file",
+          "broken anchor"
+        ]
+      }
+    },
+    {
+      "name": "Public index/derivative privacy and whitespace",
+      "status": "passed",
+      "detail": 13
+    },
+    {
+      "name": "No Git commit, ref/tag, or staged-content changes",
+      "status": "passed",
+      "detail": "69f2f23d5886bad88ddb8f8e0b2998284d8728b8"
+    },
+    {
+      "name": "Official entrypoint format validation in isolated strict staging",
+      "status": "passed",
+      "detail": {
+        "validations": 23,
+        "strictStaging": "isolated temporary root, never installation"
+      }
+    }
+  ],
+  "limits": [
+    "Maintainer semantic review, not independent model execution or user acceptance",
+    "No external service/model/project workflow test",
+    "Two installation roots only; session loading and other hosts unknown",
+    "Remote content not queried; no Git publication authorized"
+  ],
+  "formatLogs": [
+    {
+      "name": "product-docs",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "architecture",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "code-quality",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "design-standards",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "handoff-context",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "report-render",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "research-report",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "vision-recognition",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "vision-matting",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "vision-qc",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "comfyui-generate",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "powershell",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "git-workflow",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "llm-api",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "gitea",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "course-docs",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "server-ops",
+      "kind": "repo",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "project-docs",
+      "kind": "isolated-strict",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "project-arch",
+      "kind": "isolated-strict",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "project-dev",
+      "kind": "isolated-strict",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "project-design",
+      "kind": "isolated-strict",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "handoff-note",
+      "kind": "isolated-strict",
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "handoff-context",
+      "kind": "installed",
+      "output": "Skill is valid!"
+    }
+  ],
+  "status": "passed-with-stated-limits"
+}

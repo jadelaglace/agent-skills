@@ -10,10 +10,15 @@ description: >-
   output quality (vision-qc). Keywords — 抠图, 去背景, 透明背景, 分层, 抠像,
   色键, 绿幕, 蓝幕, 阴影提取, 多层合成, matte, alpha, layered.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Vision Matting
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 Turn a source image into an asset with a real alpha channel, then hand it to
 `vision-qc` for acceptance. Two paths, picked by material rather than by taste:

@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-01",
+  "machineChecks": [
+    {
+      "name": "T01/T02 source and transcription identities with negative mutations",
+      "status": "pass"
+    },
+    {
+      "name": "T03 complete historical checkpoint and installation",
+      "status": "pass"
+    },
+    {
+      "name": "T04 protected repository/install/original bytes and HEAD",
+      "status": "pass"
+    },
+    {
+      "name": "T05 inactive corpus/variants and source privacy",
+      "status": "pass"
+    },
+    {
+      "name": "T06/T08 no platform protocol in live local recovery instructions",
+      "status": "pass"
+    },
+    {
+      "name": "T10 installer rollback/drift/readback/idempotency executable tests",
+      "status": "pass"
+    },
+    {
+      "name": "T11 final installed tree, patch versions, historical unchanged files",
+      "status": "pass"
+    },
+    {
+      "name": "T11 all local Markdown links including deliberate broken-link negative",
+      "status": "pass"
+    },
+    {
+      "name": "T07/T09 strict source coverage identifiers and inactive shape",
+      "status": "pass"
+    }
+  ],
+  "limits": [
+    "Manual scenario review is not independent model execution",
+    "No real project HTTP/GPU or Babata/StockMesh workflow test",
+    "Raw transcription has one marked non-rule glyph uncertainty",
+    "Skill catalog in an existing session may remain cached"
+  ],
+  "installer": {
+    "fixtureRoot": "C:\\Users\\Aiano\\AppData\\Local\\Temp\\skills-install-test-ReBX39",
+    "driftRefused": true,
+    "rollbackRestored": true,
+    "conflictingExternalWritePreserved": true,
+    "successReadback": true,
+    "idempotent": true,
+    "rollback": {
+      "touched": [
+        "architecture/agents/openai.yaml",
+        "architecture/references/check.md"
+      ],
+      "conflicts": [],
+      "restored": true
+    }
+  },
+  "localChangesFromBaseline": [
+    "architecture/SKILL.md",
+    "code-quality/SKILL.md",
+    "design-standards/SKILL.md",
+    "product-docs/references/greenfield-init.md",
+    "product-docs/references/intent-plan-lifecycle.md",
+    "product-docs/SKILL.md"
+  ],
+  "finalInventory": [
+    {
+      "path": "architecture/agents/openai.yaml",
+      "sha256": "48491B911441C57D99F63FA381B566C8466925692803332A1FB9576289122DAD",
+      "bytes": 275
+    },
+    {
+      "path": "architecture/references/verification-and-data.md",
+      "sha256": "1363E146A15CE8609DE11DBD7BFC96A49B79D51AD799D77778343B75BED93B9D",
+      "bytes": 5022
+    },
+    {
+      "path": "architecture/SKILL.md",
+      "sha256": "94DA4DBFE28E51281FF12BFBF08251B61CD57DB1AE885C49AC43EFF7DC632F24",
+      "bytes": 7386
+    },
+    {
+      "path": "code-quality/agents/openai.yaml",
+      "sha256": "F183C6B92EF503DA5BA481AF366DC8F1C631A1B87E86205CBD8335BBF1A4703A",
+      "bytes": 271
+    },
+    {
+      "path": "code-quality/references/review-and-tests.md",
+      "sha256": "E77FBE8784AEA4BDDDF034F7A7F900760A465D8ED74F24BFC1EA7B436EDE38AE",
+      "bytes": 4910
+    },
+    {
+      "path": "code-quality/SKILL.md",
+      "sha256": "72C894CF05183B746061DA7AD3DFB0C1F32B5FE72406EE38DEE9A5537172FD74",
+      "bytes": 7546
+    },
+    {
+      "path": "design-standards/agents/openai.yaml",
+      "sha256": "767CEC489B09D543EEB742369199A7064CDF7CF4DC86953C6BC32A43AF57686C",
+      "bytes": 288
+    },
+    {
+      "path": "design-standards/references/visual-verification.md",
+      "sha256": "BDD5A627D3401E7C33B8C79A5C1F5C9B618B07C4F358AE02532A96D584B4E32B",
+      "bytes": 4703
+    },
+    {
+      "path": "design-standards/SKILL.md",
+      "sha256": "7D53BC35725DC9ECD9D334CE4A675C06A9356427A3ABA0B6098FDFB8ECA91AB3",
+      "bytes": 7245
+    },
+    {
+      "path": "product-docs/agents/openai.yaml",
+      "sha256": "097A91BE82175ED06B66C41B7326F16B7CBFAAA172AF79B6609E1997A6D137EF",
+      "bytes": 296
+    },
+    {
+      "path": "product-docs/references/document-chain.md",
+      "sha256": "D7F845F71D55095189FD57CEA0C3852D2E67B92913339206A1F67E1DCBC5E2E7",
+      "bytes": 8285
+    },
+    {
+      "path": "product-docs/references/governance-rules.md",
+      "sha256": "BB20314E3C5B5FF5ED0FF13BC71AE2CAE56B735702CB5479B3C06E16D7CAEB7D",
+      "bytes": 8600
+    },
+    {
+      "path": "product-docs/references/greenfield-init.md",
+      "sha256": "F10FB754E33B620252C5F9BAC0490EB04BCD85142FC5370E600CF37FF3B4191D",
+      "bytes": 5147
+    },
+    {
+      "path": "product-docs/references/intent-plan-lifecycle.md",
+      "sha256": "29B42BCC77C05B169262CCDD3E2392519A22AE20575C8200812E9011882E6CA9",
+      "bytes": 4754
+    },
+    {
+      "path": "product-docs/references/intent-preservation.md",
+      "sha256": "A97F2C3C5FE04429CC17B94647CC84D87487F05A44A9F44642C865A27C0E3130",
+      "bytes": 3190
+    },
+    {
+      "path": "product-docs/references/quality-specialization-plan.md",
+      "sha256": "D92FEAAF6432D72E6ABFA6280B5397ACCE79E75812E0CCE52B76AC7CB3E4C469",
+      "bytes": 25702
+    },
+    {
+      "path": "product-docs/SKILL.md",
+      "sha256": "1A7615D28231F316801B282AEC63777BB421569AD2E6F96EE30FE10149D0F87C",
+      "bytes": 22251
+    }
+  ],
+  "checkedLinkCount": 16,
+  "coverageGroups": 128,
+  "isolatedStrictValidation": "C:\\Users\\Aiano\\AppData\\Local\\Temp\\strict-skill-validation-7TG3tt"
+}

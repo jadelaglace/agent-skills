@@ -2,10 +2,15 @@
 name: vision-recognition
 description: Recognize and verify image or video-frame content with a vision model plus objective CV measurements. Use when asked what a picture shows, to transcribe text or tables from screenshots, compare two images, judge visual similarity, style, background, or color, locate changed regions, or when the host model cannot accept image input. Does not perform matting, compositing, image generation, or print/scan QC.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Vision Recognition
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 Answer "what is this, are these alike, where do they differ" with two cooperating
 layers:

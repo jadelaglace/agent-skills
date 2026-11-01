@@ -10,10 +10,15 @@ description: >-
   课程规划, 大纲, 讲义, 每课结构, 因果主线, 抽象层级, 过渡验收, 五维覆盖,
   curriculum, lesson plan, course.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Course Docs
+
+> Lineage: screenshot-replicated strict-process skill, originating in a
+> weak-capability-LLM environment (user-provided design background, not a model
+> capability measurement). Source batch and local distribution status are
+> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).
 
 A course is not a pile of chapters; it is a chain of dependencies. The single
 structural rule that keeps it usable: **a lesson may only use what earlier
