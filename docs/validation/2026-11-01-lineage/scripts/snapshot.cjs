@@ -3,7 +3,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const cp = require('node:child_process');
 const root = process.cwd();
-const backup = 'C:/Users/Aiano/codex-skills-replicas/lineage-governance-20261101';
+const backup = 'C:/Users/Aiano/agent-skills-replicas/lineage-governance-20261101';
 const sha = data => crypto.createHash('sha256').update(data).digest('hex').toUpperCase();
 function scan(dir) {
   if (!fs.existsSync(dir)) return null;

@@ -2,7 +2,7 @@
 const fs=require('node:fs'), path=require('node:path'), crypto=require('node:crypto'), assert=require('node:assert/strict');
 const {pathToFileURL,fileURLToPath}=require('node:url');
 const modules='C:/Users/Aiano/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
-const repo='C:/Users/Aiano/codex-skills';
+const repo='C:/Users/Aiano/agent-skills';
 const markdown=path.join(repo,'docs/four-skills-three-line-plan.md');
 const html='C:/Users/Aiano/Desktop/1028-four-skills-three-line-plan.html';
 const output=path.join(repo,'docs/validation/2026-11-01-three-line');

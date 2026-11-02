@@ -1,7 +1,7 @@
 # 四技能吸收计划审核记录
 
 审核日期：2026-10-24。审核对象：
-`C:\Users\Aiano\codex-skills-replicas\screenshot-lineage\ABSORB-PLAN.md`。
+`C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\ABSORB-PLAN.md`。
 
 本记录只保存审核结论，不修改外部计划、不修改四个目标 Skill、不安装、不提交、不 push、不打标签。
 当前用户要求是“接手四大技能吸收的任务，审核最终计划”，不是授权开始执行。
@@ -50,7 +50,7 @@
 
 ### B4：来源 HTML 注释包含不稳定本机路径
 
-G06 终稿写入 `codex-skills-replicas/screenshot-lineage/COMPARISON.md`，这不是目标仓库稳定文件，
+G06 终稿写入 `agent-skills-replicas/screenshot-lineage/COMPARISON.md`，这不是目标仓库稳定文件，
 发布后会断链并暴露本机工作区命名，与无环境绑定门禁冲突。应改为稳定的仓库内来源说明，或只保留不带本机路径的来源标签。
 
 ### B5：回滚命令可能丢失无关改动

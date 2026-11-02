@@ -178,9 +178,9 @@ report-render 未发生差异。共 6 个安装文件；无真实搜索、渲染
 本次只清理相关文档与制定 [1028 增量计划](skill-absorption-1028-plan.md)，不改 Skill 或安装副本。
 以下为吸收前历史快照，不能用来覆盖最新终态或触发重装。
 
-2026-10-24 只读核对。工作区为本机 `codex-skills`，分支 `main`，当时 HEAD：
+2026-10-24 只读核对。工作区为本机 `agent-skills`，分支 `main`，当时 HEAD：
 `e43c0cbe33a038ea1e94c563066546eb57b9a6e9`。
-远端配置为 `git@github.com:jadelaglace/codex-skills.git`。
+远端配置为 `git@github.com:jadelaglace/agent-skills.git`。
 缓存 `origin/main` 与 HEAD 相同；未 fetch 或实时查询 GitHub。
 
 | Skill | 仓库版本 | 本机 `.agents` 对比 |

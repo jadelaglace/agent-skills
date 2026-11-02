@@ -5,7 +5,7 @@
 2026-10-31 校正：下文“本轮/后续/待批准”是当时的计划措辞，不构成当前待办；最终发布身份
 为 `1e912cd` / `repo-2026.10.25.3`，详见主计划顶部。1028 不重跑本轮。
 唯一执行进度由[四技能吸收计划](skill-absorption-plan.md)维护。
-关联：[GitHub #15](https://github.com/jadelaglace/codex-skills/issues/15)。
+关联：[GitHub #15](https://github.com/jadelaglace/agent-skills/issues/15)。
 
 ## 1. 要达到的结果与本次边界
 
@@ -26,7 +26,7 @@ S0–S8 和已有 Babata 验证均保持终态，不重复安装、自测或启�
 
 ### 2.1 来源地位
 
-外部只读根为本机 `codex-skills-replicas/screenshot-lineage`：
+外部只读根为本机 `agent-skills-replicas/screenshot-lineage`：
 
 | 材料 | 本轮使用方式 | 限制 |
 | --- | --- | --- |

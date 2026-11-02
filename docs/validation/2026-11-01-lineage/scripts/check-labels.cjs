@@ -1,7 +1,7 @@
 const fs=require('node:fs');
 const crypto=require('node:crypto');
 const path=require('node:path');
-const backup='C:/Users/Aiano/codex-skills-replicas/lineage-governance-20261101';
+const backup='C:/Users/Aiano/agent-skills-replicas/lineage-governance-20261101';
 const before=JSON.parse(fs.readFileSync(path.join(backup,'BEFORE.json')));
 const names=['vision-recognition','vision-matting','vision-qc','comfyui-generate','powershell','git-workflow','llm-api','gitea','course-docs','server-ops'];
 const label='> Lineage: screenshot-replicated strict-process skill, originating in a\n> weak-capability-LLM environment (user-provided design background, not a model\n> capability measurement). Source batch and local distribution status are\n> recorded in the [repository index](../../SKILLS-INDEX.md#screenshot-replicas).';

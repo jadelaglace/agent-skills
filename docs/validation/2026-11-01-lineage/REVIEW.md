@@ -43,7 +43,7 @@ Release或远端查询；后续分发见[发布记录](../2026-11-01-publication
 
 实施前skills/variants/corpus完整目录树、受影响README/忽略规则/两份进度分析文档、
 相关已安装技能及Git状态快照保存在仓库外（不是整个仓库的完整备份）：
-`C:\Users\Aiano\codex-skills-replicas\lineage-governance-20261101`。
+`C:\Users\Aiano\agent-skills-replicas\lineage-governance-20261101`。
 其中handoff原文在备份时仍是未封存稿，后来重新核图校正；最终身份由独立manifest
 绑定，不能用备份里的临时稿覆盖。
 既有四份原文没有重写。备份文件不用于覆盖未来并行工作。

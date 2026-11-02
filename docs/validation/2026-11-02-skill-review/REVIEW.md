@@ -71,7 +71,7 @@ MIT 版权署名与许可保留到技能包内，去推广不等于去来源。�
 
 新授权原话：『结论质量不错，但是不改，蒸馏的也有效，蒸馏后的推上去吧』。仅发布独立蒸馏技能及已关联记录。
 
-- 分支main；远端origin为git@github.com:jadelaglace/codex-skills.git。发布前本地HEAD与实时远端main均为59d0462ecdff19280b18a2f2d07bb37f7885791a，暂存区为空。
+- 分支main；远端origin为git@github.com:jadelaglace/agent-skills.git。发布前本地HEAD与实时远端main均为59d0462ecdff19280b18a2f2d07bb37f7885791a，暂存区为空。
 - skill-review保持1.0.0；这是初版首次入Git，没有新的技能内容变动，不滚patch或重装。
 - 1028严格版project-docs保持原样，入口SHA256为71b462fe21cbb367a1f514dffaff42b12f081458e1767198082db9ea7b834114；禁用、不安装。
 - 普通提交并push origin/main；不创建/移动标签，不创建GitHub Release，不force。内容推送后回读远端，再以单独文档提交记录终态。

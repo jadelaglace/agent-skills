@@ -92,7 +92,7 @@ C:/Users/Aiano/Desktop/research_reports/reports/technology/外部Skill翻新_102
 实际落盘布局（历史原样快照位于仓库外持久保护包，不再重复建一套仓库内历史语料）：
 
 ~~~text
-codex-skills/
+agent-skills/
   skills/                            # 唯一默认发布的本机主线
     product-docs/
     design-standards/
@@ -118,7 +118,7 @@ codex-skills/
     four-skills-three-line-evidence.md # 实施证据，不另起待办
 ~~~
 
-仓库外保护包：C:/Users/Aiano/codex-skills-replicas/three-line-20261101，含 S0-MANIFEST.json、before/、baseline/ 与 INSTALL-baseline.json / INSTALL-final.json。历史文件以 .snapshot.txt 保存，不提供可发现入口。
+仓库外保护包：C:/Users/Aiano/agent-skills-replicas/three-line-20261101，含 S0-MANIFEST.json、before/、baseline/ 与 INSTALL-baseline.json / INSTALL-final.json。历史文件以 .snapshot.txt 保存，不提供可发现入口。
 
 - 原文只用 original.txt，不生成可被自动发现的 SKILL.md，不增加触发描述或 UI 元数据。
 - 严格变体保留 project-* 的身份，先用 SKILL.md.disabled 保存完整技能草稿；不放进 .agents/skills 或 .codex/skills，不建到它们的链接，不被默认安装/打包入口纳入。
@@ -327,7 +327,7 @@ T01–T11 已执行可机器验证部分与维护者场景审阅，详见 valida
 
 本轮实施终态：S0–S5-delivered-with-validation-limits。原文封存在 corpus/1028-original；严格源码在 variants/1028-strict，只有 .disabled；本机原名四件套在 skills 与 .agents/skills，17文件逐哈希一致。HEAD仍69f2f23，Git暂存/提交/远端/标签未改。本机版本为1.0.5与三份1.1.1，严格各1.0.0，仓库无新发布版本。
 
-证据入口：[实施证据](four-skills-three-line-evidence.md)、[机器校验](validation/2026-11-01-three-line/validation.json)、[本机场景自审](validation/2026-11-01-three-line/local-review.md)、[严格场景自审](validation/2026-11-01-three-line/strict-review.md)、[原文说明](../corpus/1028-original/TRANSCRIPTION-NOTES.md)、[128组严格覆盖](../variants/1028-strict/COVERAGE.md)。S0快照与两次安装身份保存在 C:/Users/Aiano/codex-skills-replicas/three-line-20261101，均可恢复。
+证据入口：[实施证据](four-skills-three-line-evidence.md)、[机器校验](validation/2026-11-01-three-line/validation.json)、[本机场景自审](validation/2026-11-01-three-line/local-review.md)、[严格场景自审](validation/2026-11-01-three-line/strict-review.md)、[原文说明](../corpus/1028-original/TRANSCRIPTION-NOTES.md)、[128组严格覆盖](../variants/1028-strict/COVERAGE.md)。S0快照与两次安装身份保存在 C:/Users/Aiano/agent-skills-replicas/three-line-20261101，均可恢复。
 
 未证明的边界：原文一处非规则实例短语仍标字形歧义；独立模型行为/实际产品HTTP-GPU/全链实战/用户接受未验证；既有会话技能快照不保证热刷新。不得为填补这些缺口自动启用严格变体、改真实项目或重复本轮安装。后续动作须由新的明确指令决定。
 

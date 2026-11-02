@@ -37,7 +37,7 @@
 - 临时 `page_22.md` OCR 不完整，不能代替产品层原图；`docs/reference-transcripts/project-*.md` 是 10-23 旧批次，不能冒充 1028。
 - 本地依据：仓库四技能正文及相关 references，实际读取快照 HEAD `69f2f23d5886bad88ddb8f8e0b2998284d8728b8`。
 - 上一轮终态参见 [吸收计划](skill-absorption-plan.md)，日期标签 `repo-2026.10.25.3`。三个专业技能相对该标签无内容 diff；产品层恢复机制变化独立隔离。
-- 旧来源旁证：`C:/Users/Aiano/codex-skills-replicas/screenshot-lineage/project-{docs,design,arch,dev}/SKILL.md`。这是旧轮复刻，不是外部作者仓库的完整版本历史。
+- 旧来源旁证：`C:/Users/Aiano/agent-skills-replicas/screenshot-lineage/project-{docs,design,arch,dev}/SKILL.md`。这是旧轮复刻，不是外部作者仓库的完整版本历史。
 - 多条 1028 细则在旧来源已存在，应称上轮漏吸收、误读或泛化过头，不能断言作者在 1028 首创新增。
 - 原图要点是短句摘录或跨句归并，不冒充完整逐字转录。本地与旧复刻引文按实际文件行核对。
 - 不改 Skill、安装副本、版本、GitHub；不触恢复机制 #16、其他 Agent 的文件或计划。原图与来源只读。
