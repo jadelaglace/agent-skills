@@ -51,7 +51,7 @@ e43c0cb是主干基线，不声称当前内容与该提交逐字相同。
 
 | 技能 / 入口 | 风格与版本 | 来源 | 本机与分发 | 证据 |
 | --- | --- | --- | --- | --- |
-| [skill-review](skills/skill-review/SKILL.md)：技能审查、比较与改进 | 能力信任型；独立1.0.0；生成模型未登记 | YTruman/better-skill固定提交f5a82c6，MIT改编；非上游原版/官方背书 | 2026-11-02已本机发布且6文件SHA256一致；`.codex`无同名目录；本会话显式使用并获用户认可，自动触发未测；Git分发见记录 | [取舍与验证及分发](docs/validation/2026-11-02-skill-review/REVIEW.md) |
+| [skill-review](skills/skill-review/SKILL.md)：技能审查、比较与改进 | 能力信任型；独立1.0.0；生成模型未登记 | YTruman/better-skill固定提交f5a82c6，MIT改编；非上游原版/官方背书 | 2026-11-02已本机发布且6文件SHA256一致；`.codex`无同名目录；显式使用获用户认可，自动触发未测；内容e5d8bde已push并回读；无新标签/Release | [取舍与验证及分发](docs/validation/2026-11-02-skill-review/REVIEW.md) |
 
 ## Screenshot Replicas
 

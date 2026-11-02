@@ -4,8 +4,9 @@
 
 最新授权：『结论质量不错，但是不改，蒸馏的也有效，蒸馏后的推上去吧』。
 1028严格版 project-docs 保持不改；只提交 skill-review 1.0.0、其来源/验证记录
-及本次已关联的README、索引和进度更新，普通push到origin/main。当前为发布前
-核验完成、待提交推送；结果见[本轮记录](validation/2026-11-02-skill-review/REVIEW.md)。
+及本次已关联的README、索引和进度更新。内容提交e5d8bdeed39799f67089f2b5409e62cecf7d3e12
+已普通push到origin/main，实时远端main回读一致；分发已完成，无待续跑发布动作。
+本终态随独立文档提交同步；结果见[本轮记录](validation/2026-11-02-skill-review/REVIEW.md)。
 这是已安装1.0.0的首次入Git，不改技能内容、不重装、不新建标签或Release。
 
 ## 已完成实施：better-skill 自用提炼（2026-11-02）
