@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-02",
+  "skill": "skill-review",
+  "version": "1.0.0",
+  "source_commit": "f5a82c68eb1d9489b2e3aac3eb46fc8383cd7a93",
+  "checks": {
+    "official_repository_format": "Skill is valid!",
+    "official_installed_format": "Skill is valid!",
+    "package_exact_file_set": true,
+    "local_links_resolve": true,
+    "yaml_ui_and_invocation": true,
+    "upstream_license_exact_bytes": true,
+    "upstream_blobs_verified": 13,
+    "runtime_brand_and_external_url_scan": true,
+    "preexisting_tracked_skill_variant_corpus_diff_empty": true,
+    "installation_file_set_and_sha256_match": true,
+    "codex_duplicate_absent": true
+  },
+  "source_manifest": "source-manifest.json",
+  "local_links": [
+    {
+      "file": "NOTICE.md",
+      "target": "LICENSE"
+    },
+    {
+      "file": "SKILL.md",
+      "target": "references/review.md"
+    },
+    {
+      "file": "SKILL.md",
+      "target": "references/evaluation.md"
+    },
+    {
+      "file": "SKILL.md",
+      "target": "NOTICE.md"
+    },
+    {
+      "file": "SKILL.md",
+      "target": "LICENSE"
+    }
+  ],
+  "instructional_bytes": {
+    "upstream_entry": 9190,
+    "derivative_entry": 4018,
+    "upstream_entry_and_all_references": 53456,
+    "derivative_entry_and_all_references": 11280,
+    "meaning": "UTF-8 file byte sizes, not runtime Token consumption"
+  },
+  "installation": {
+    "path": "C:\\Users\\Aiano\\.agents\\skills\\skill-review",
+    "file_count": 6,
+    "sha256": {
+      "LICENSE": "4ea7f88a00315b753554071654d67704ac240f04df37c1a857967a3539b11d7d",
+      "NOTICE.md": "6a8a663fb0f5e170352548b1710e1d921db5a2f5ad9c7471e29cff3f5981acee",
+      "SKILL.md": "060043189c25f74446989f5909ff864c8ff8e2999385cc42fa75d7d9118f63e3",
+      "agents/openai.yaml": "97606aae372c346ee8b2bd79968576631bc274bf66071a88e372ee960013600d",
+      "references/evaluation.md": "94285863551535789d9ac6c5aa5bbe0b05cc6413a1326dbf7b704dfbb11b9533",
+      "references/review.md": "c09d35968481fb32f563040e18febd76ead2e9610b0be9df79af21b7736b3b41"
+    },
+    "host_discovery_observed": false,
+    "current_session_invocation_proven": false
+  },
+  "not_tested": [
+    "independent model behavior",
+    "automatic host selection",
+    "with/without outcomes",
+    "cross-session use",
+    "real user acceptance"
+  ],
+  "git_distribution": {
+    "commit_created": false,
+    "pushed": false,
+    "tag_created": false,
+    "release_created": false
+  }
+}

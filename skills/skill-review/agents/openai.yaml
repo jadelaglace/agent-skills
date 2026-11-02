@@ -1,0 +1,6 @@
+interface:
+  display_name: "Skill Review"
+  short_description: "Review skills through evidence and task outcomes"
+  default_prompt: "Use $skill-review to inspect this skill and make the requested improvements with proportionate verification."
+policy:
+  allow_implicit_invocation: true

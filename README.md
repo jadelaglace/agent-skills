@@ -25,6 +25,7 @@ observed installation state. This is not an activation or installation switch.
 - `design-standards` (`1.1.1`): create reusable design standards and verify actual rendered outputs.
 - `report-render` (`1.0.0`): render existing HTML reports to long or paginated PNGs and record visual QC without changing report facts.
 - `research-report` (`1.1.0`): orchestrate traceable research from question and evidence through Markdown, adversarial review, rendered delivery, and archival.
+- `skill-review` (`1.0.0`): review, compare, and improve skills with file evidence and task outcomes; independently distilled from YTruman/better-skill with its MIT notice retained and brand promotion removed. See the [adaptation record](docs/validation/2026-11-02-skill-review/REVIEW.md).
 
 Publication scope (2026-11-01): `handoff-context` 1.0.3 now refines the accepted
 1.0.1 baseline without the halted #16 tool/identity-table binding and is synced
