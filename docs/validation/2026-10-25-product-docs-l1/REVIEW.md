@@ -36,7 +36,7 @@ placed in `SKILL.md`, and no existing rule is replaced or deleted.
 
 ## L1 implementation evidence
 
-- Backup: `C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\absorb-backups\l1-20261025-111058`
+- Backup: `C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\absorb-backups\l1-20261025-111058`
   (repository product-docs 8 files + installation product-docs 8 files; content and
   SHA256 readback passed).
 - Applied target: `skills/product-docs/references/document-chain.md` only.

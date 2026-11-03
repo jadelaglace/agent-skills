@@ -1,6 +1,6 @@
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),crypto=require('node:crypto'),assert=require('node:assert/strict'),os=require('node:os');
 const {inventory,signature,selftest}=require('./install.cjs');
-const repo='C:/Users/Aiano/agent-skills',archive='C:/Users/Aiano/agent-skills-replicas/three-line-20261101';
+const repo='C:/Users/Aiano/work/agent-skills',archive='C:/Users/Aiano/work/agent-skills-replicas/three-line-20261101';
 const names=['product-docs','architecture','code-quality','design-standards'],external=['project-docs','project-design','project-arch','project-dev'];
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();
 const read=p=>fs.readFileSync(path.join(repo,p),'utf8');

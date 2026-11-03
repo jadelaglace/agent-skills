@@ -1,6 +1,6 @@
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),crypto=require('node:crypto'),assert=require('node:assert/strict'),os=require('node:os');
 const root=process.cwd(),out='docs/validation/2026-11-01-lineage';
-const backup='C:/Users/Aiano/agent-skills-replicas/lineage-governance-20261101';
+const backup='C:/Users/Aiano/work/agent-skills-replicas/lineage-governance-20261101';
 const before=JSON.parse(fs.readFileSync(backup+'/BEFORE.json'));
 const read=p=>fs.readFileSync(p,'utf8');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex').toUpperCase();

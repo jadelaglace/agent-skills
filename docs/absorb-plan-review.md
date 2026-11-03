@@ -1,7 +1,7 @@
 # 四技能吸收计划审核记录
 
 审核日期：2026-10-24。审核对象：
-`C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\ABSORB-PLAN.md`。
+`C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\ABSORB-PLAN.md`。
 
 本记录只保存审核结论，不修改外部计划、不修改四个目标 Skill、不安装、不提交、不 push、不打标签。
 当前用户要求是“接手四大技能吸收的任务，审核最终计划”，不是授权开始执行。
