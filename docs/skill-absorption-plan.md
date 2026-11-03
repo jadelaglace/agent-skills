@@ -48,7 +48,7 @@ S8 终态证据（2026-10-25）：源提交为 `70c18bd9df346e0e3cd555f95c75350e
 共 11 个文件：5 个更新、2 个新增、4 个不变，无删除；相对清单、大小及 SHA256
 与仓库一致。三项格式校验和 5 个本地链接通过；16 个 product-docs 仓库/安装保护文件
 校验保持不变。备份根目录为
-`C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\absorb-backups\s8-20261025-083528`，
+`C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\absorb-backups\s8-20261025-083528`，
 含 `install/` 的 9 个原安装文件、`s8-before-manifest.json` 和
 `s8-after-manifest.json`（`sync-readback-passed`），两个新增文件记录为 absent-before。
 本地发布完成；本阶段未 commit、push、tag 或创建 Release。S9 保持
@@ -80,7 +80,7 @@ manifest 和 34 张原图。三个 `.agents\skills` 目录均存在，逐文件�
 S0 不修改任何 Skill、安装副本或外部素材；S1 仅建立备份与验证清单，未修改目标内容。
 
 S1 终态证据（2026-10-24）：备份根目录为
-`C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\absorb-backups\20261024-211750\`，
+`C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\absorb-backups\20261024-211750\`，
 清单为 `backup-manifest.csv`。清单共 17 项：15 个已存在文件均已复制并逐项回读大小与
 SHA256，2 个计划新 reference 明确记录为 `absent-before`，未伪造旧文件或哈希。备份包含
 三个待改入口、两个待追加 reference、`product-docs/SKILL.md` 保护副本，以及三个
@@ -90,7 +90,7 @@ SHA256，2 个计划新 reference 明确记录为 `absent-before`，未伪造旧
 改动保持不动。S1 未生成 diff、未改 Skill 或安装副本、未改版本、未 commit、未 push、未打标签。
 
 S2 终态证据（2026-10-24）：仓库外初版预览目录为
-`C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\absorb-diffs\20261024-212614\`，
+`C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\absorb-diffs\20261024-212614\`，
 包含 `S2-DIFF-PREVIEW.md` 和 `S2-DIFF-MANIFEST.json`。预览绑定外部
 `ABSORB-PLAN.md` SHA256
 `FD3FA969109774EB0A81905864DA763E68905DDDE0EC85EAA5B3CD6C31D73F22`、仓库 HEAD
@@ -105,7 +105,7 @@ URL/凭证/临时目录，五个既有目标哈希及 `product-docs` 保护哈�
 版本号或 Git 状态。
 
 S2 预算修订证据（2026-10-24）：保留初版目录不变，新增仓库外修订目录为
-`C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\absorb-diffs\20261024-213900\`。
+`C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\absorb-diffs\20261024-213900\`。
 修订只压缩三个入口 `SKILL.md` 的英文表达并明确真实锚点替换；复核公开来源注释时发现三处
 误指向仓库外暂存目录，现已改为稳定的无路径来源说明；66 个 ID、7 个目标、两个长 reference
 的内容和独立预算均保持不变。按冻结目标文件的非空物理行、逐锚点
@@ -162,7 +162,7 @@ S2 preview-only，不授权 S3、源码写入、版本变更、安装、commit�
 外部文件：
 
 ```text
-C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\ABSORB-PLAN.md
+C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\ABSORB-PLAN.md
 ```
 
 它保留外部整理出的 66 项裁决、逐点终稿和素材索引，本轮不再勘误、不修改、不把它
@@ -177,7 +177,7 @@ C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\ABSORB-PLAN.md
 仓库：
 
 ```text
-C:\Users\Aiano\agent-skills
+C:\Users\Aiano\work\agent-skills
 ```
 
 目标安装根（用户明确指定）：
@@ -412,7 +412,7 @@ L1 专项轮开始前必须重新评估“强制四层路由 vs 按需专业化�
 在一个可恢复的计划专用目录建立备份，例如：
 
 ```text
-C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\absorb-backups\<timestamp>\
+C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\absorb-backups\<timestamp>\
 ```
 
 备份范围必须完整：
@@ -677,4 +677,4 @@ manifest SHA256 为 `72FB06EA07921291C4B5F8C1DB8F71E59EA08DE3380057C860CA0F5FE8B
 `A8D8BAE88FF9E5F4C2BB8AAD184E78D8E6955685F3C0CA7846C284437AD63F76`，修订 manifest
 SHA256 为 `F90E451FB9B2A032411AB05D1DB91FFF1B923DB4BC8DE4758749B87F100A0BDB`；manifest
 中的预览哈希已与预览文件回读一致。revision 3 预览和 manifest 见
-`C:\Users\Aiano\agent-skills-replicas\screenshot-lineage\absorb-diffs\20261024-230719\`。
+`C:\Users\Aiano\work\agent-skills-replicas\screenshot-lineage\absorb-diffs\20261024-230719\`。
