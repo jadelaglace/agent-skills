@@ -14,6 +14,12 @@ This block is a shallow entry point; the linked plan owns current progress.
 
 ## Skills
 
+Maintenance status (2026-11-15): active — `product-docs`, `handoff-context`,
+`architecture`, `code-quality`, `design-standards`, `git-workflow`, `server-ops`.
+Frozen — `report-render`, `research-report`, `skill-review`, the vision/comfyui/
+powershell/llm-api/gitea/course-docs replicas, and the disabled strict variants.
+Frozen means no new versions or content; files stay in the repository.
+
 See the [skill lineage, design style, versions and distribution index](SKILLS-INDEX.md)
 for the maintained registry of mainlines, strict variants, private corpus, and
 observed installation state. This is not an activation or installation switch.
@@ -23,9 +29,9 @@ observed installation state. This is not an activation or installation switch.
 - `architecture` (`1.1.1`): define technical contracts and verify functional-unit and integration evidence.
 - `code-quality` (`1.1.1`): implement and review code against adopted contracts, tests, and quality gates.
 - `design-standards` (`1.1.1`): create reusable design standards and verify actual rendered outputs.
-- `report-render` (`1.0.0`): render existing HTML reports to long or paginated PNGs and record visual QC without changing report facts.
-- `research-report` (`1.1.0`): orchestrate traceable research from question and evidence through Markdown, adversarial review, rendered delivery, and archival.
-- `skill-review` (`1.0.0`): review, compare, and improve skills with file evidence and task outcomes; independently distilled from YTruman/better-skill with its MIT notice retained and brand promotion removed. See the [adaptation record](docs/validation/2026-11-02-skill-review/REVIEW.md).
+- `report-render` (`1.0.0`, frozen): render existing HTML reports to long or paginated PNGs and record visual QC without changing report facts.
+- `research-report` (`1.1.0`, frozen): orchestrate traceable research from question and evidence through Markdown, adversarial review, rendered delivery, and archival.
+- `skill-review` (`1.0.0`, frozen): review, compare, and improve skills with file evidence and task outcomes; independently distilled from YTruman/better-skill with its MIT notice retained and brand promotion removed. See the [adaptation record](docs/validation/2026-11-02-skill-review/REVIEW.md).
 
 Publication scope (2026-11-01): `handoff-context` 1.0.3 now refines the accepted
 1.0.1 baseline without the halted #16 tool/identity-table binding and is synced
