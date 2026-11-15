@@ -5,6 +5,14 @@
 此索引登记内容线与分发观察，不是运行时
 任务权威、安装开关或自动选模器；当前工作只见[计划入口](docs/skill-replication-plan.md)。
 
+## 维护状态（2026-11-15）
+
+- **活跃**：`product-docs`、`handoff-context`、`architecture`、`code-quality`、`design-standards`、`git-workflow`、`server-ops`。
+- **冻结**：`report-render`、`research-report`、`skill-review`、`vision-recognition`、`vision-matting`、`vision-qc`、`comfyui-generate`、`powershell`、`llm-api`、`gitea`、`course-docs`，以及 `variants/1028-strict/` 下 5 个禁用严格变体。冻结 = 不再新增版本或内容；仓库内文件保留。
+- **2026-11-15 本机操作**：删除已本机安装的冻结技能 `skill-review`（`~/.agents/skills/skill-review`）。删除前与仓库 `skills/skill-review` 逐文件一致，无内容损失。
+- **偏差记录**：下文 `report-render`、`research-report` 的“既有安装且一致”记录，与 2026-11-15 回读不符：`~/.agents/skills` 与 `~/.codex/skills` 下均未发现这两项。本次未重新安装，也未据此修改其它安装。`git-workflow`、`server-ops` 同样未在两根下发现，本次未安装。
+- 下文的历史表格与证据保持原样；冻结项只在行首加“（冻结）”标记。
+
 ## 如何读
 
 - **能力信任型**：少量高价值引导，允许模型判断，大纲/流程按风险裁剪。
@@ -37,8 +45,8 @@
 | code-quality / 本机代码主线 | [1.1.1](skills/code-quality/SKILL.md) | 能力信任型；同上 | 同一e43c0cb历史；少量质量闭环精炼 | project-dev | 已本机发布且一致；保留 | 本次日期发布内容，见发布记录 |
 | design-standards / 本机设计主线 | [1.1.1](skills/design-standards/SKILL.md) | 能力信任型；同上 | 同一e43c0cb历史；按适用范围验证实际输出 | project-design | 已本机发布且一致；保留 | 本次日期发布内容，见发布记录 |
 | handoff-context / 本机交接主线 | [1.0.3](skills/handoff-context/SKILL.md) | 能力信任型；用户要求相信能力、简洁、工具解耦 | 已接受b1b1c43的1.0.1及原始用户意图；审阅69f2f23的1.0.2，去除未验收#16 API/身份表绑定；借鉴1028少量证据亮点 | handoff-note | 本轮已本机发布且一致；保留 | 本次日期发布内容；不覆盖历史1.0.2身份 |
-| report-render / 既有本机渲染线 | [1.0.0](skills/report-render/SKILL.md) | 既有可移植渲染合同；不新增强/弱归类 | 旧34页截图22–24页复刻，清理特定环境后成为既有本机对应；1028未声称逐条重建 | 无本轮新变体 | 既有安装且一致；本轮不分发 | 内容已在HEAD；最近相关提交6c17cc7 |
-| research-report / 既有本机调研线 | [1.1.0](skills/research-report/SKILL.md) | 既有调研编排合同；不新增强/弱归类 | 旧34页截图24–26页复刻；后收本机可迁移审查改进；1028未声称逐条重建 | 无本轮新变体 | 既有安装且一致；本轮不分发 | 内容已在HEAD；最近相关提交6c17cc7 |
+| report-render（冻结） / 既有本机渲染线 | [1.0.0](skills/report-render/SKILL.md) | 既有可移植渲染合同；不新增强/弱归类 | 旧34页截图22–24页复刻，清理特定环境后成为既有本机对应；1028未声称逐条重建 | 无本轮新变体 | 既有安装且一致；本轮不分发 | 内容已在HEAD；最近相关提交6c17cc7 |
+| research-report（冻结） / 既有本机调研线 | [1.1.0](skills/research-report/SKILL.md) | 既有调研编排合同；不新增强/弱归类 | 旧34页截图24–26页复刻；后收本机可迁移审查改进；1028未声称逐条重建 | 无本轮新变体 | 既有安装且一致；本轮不分发 | 内容已在HEAD；最近相关提交6c17cc7 |
 
 四件套恢复证据见[三线结果](docs/four-skills-three-line-evidence.md)，交接来源与
 历史裁定见[交接自审](docs/validation/2026-11-01-lineage/handoff-review.md)。
@@ -51,7 +59,7 @@ e43c0cb是主干基线，不声称当前内容与该提交逐字相同。
 
 | 技能 / 入口 | 风格与版本 | 来源 | 本机与分发 | 证据 |
 | --- | --- | --- | --- | --- |
-| [skill-review](skills/skill-review/SKILL.md)：技能审查、比较与改进 | 能力信任型；独立1.0.0；生成模型未登记 | YTruman/better-skill固定提交f5a82c6，MIT改编；非上游原版/官方背书 | 2026-11-02已本机发布且6文件SHA256一致；`.codex`无同名目录；显式使用获用户认可，自动触发未测；内容e5d8bde已push并回读；无新标签/Release | [取舍与验证及分发](docs/validation/2026-11-02-skill-review/REVIEW.md) |
+| （冻结）[skill-review](skills/skill-review/SKILL.md)：技能审查、比较与改进 | 能力信任型；独立1.0.0；生成模型未登记 | YTruman/better-skill固定提交f5a82c6，MIT改编；非上游原版/官方背书 | 2026-11-02已本机发布且6文件SHA256一致；`.codex`无同名目录；显式使用获用户认可，自动触发未测；内容e5d8bde已push并回读；无新标签/Release | [取舍与验证及分发](docs/validation/2026-11-02-skill-review/REVIEW.md) |
 
 ## Screenshot Replicas
 
@@ -66,15 +74,15 @@ e43c0cb是主干基线，不声称当前内容与该提交逐字相同。
 
 | 技能与职责 | 版本/入口 | 主干与1028对齐证据 | 本机/启用 | 分发意图 |
 | --- | --- | --- | --- | --- |
-| vision-recognition：识图与客观测量 | [1.0.1](skills/vision-recognition/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
-| vision-matting：透明抠图/分层合成 | [1.0.1](skills/vision-matting/SKILL.md) | 旧截图复刻；已有1028脚本级对齐记录，不据此宣称全合同覆盖 | 未安装；无安装入口 | 仅存仓库 |
-| vision-qc：抠图/渲染质量核证 | [1.0.1](skills/vision-qc/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
-| comfyui-generate：工作流执行 | [1.0.1](skills/comfyui-generate/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
-| powershell：脚本陷阱处理 | [1.0.1](skills/powershell/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
+| vision-recognition（冻结）：识图与客观测量 | [1.0.1](skills/vision-recognition/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
+| vision-matting（冻结）：透明抠图/分层合成 | [1.0.1](skills/vision-matting/SKILL.md) | 旧截图复刻；已有1028脚本级对齐记录，不据此宣称全合同覆盖 | 未安装；无安装入口 | 仅存仓库 |
+| vision-qc（冻结）：抠图/渲染质量核证 | [1.0.1](skills/vision-qc/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
+| comfyui-generate（冻结）：工作流执行 | [1.0.1](skills/comfyui-generate/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
+| powershell（冻结）：脚本陷阱处理 | [1.0.1](skills/powershell/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
 | git-workflow：Git协作流程 | [1.0.1](skills/git-workflow/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
-| llm-api：兼容接口调用 | [1.0.1](skills/llm-api/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；旧文“已安装”与现状不符，原因未核 | 仅存仓库，不擅自补装 |
-| gitea：实例API操作 | [1.0.1](skills/gitea/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
-| course-docs：课程因果结构 | [1.0.1](skills/course-docs/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
+| llm-api（冻结）：兼容接口调用 | [1.0.1](skills/llm-api/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；旧文“已安装”与现状不符，原因未核 | 仅存仓库，不擅自补装 |
+| gitea（冻结）：实例API操作 | [1.0.1](skills/gitea/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
+| course-docs（冻结）：课程因果结构 | [1.0.1](skills/course-docs/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
 | server-ops：服务排障运维 | [1.0.1](skills/server-ops/SKILL.md) | 旧截图复刻；1028完整对齐待核 | 未安装；无安装入口 | 仅存仓库 |
 
 69f2f23是旧提交身份，不是1.0.1内容哈希。批次与安装差异说明见
